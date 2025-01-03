@@ -1,12 +1,117 @@
-Hi there! 👋 I'm **Fabrice Van Boeckel**, a passionate Data Scientist dedicated to transforming data into actionable insights and compelling stories.
+# Fabrice Van Boeckel
 
-With expertise in machine learning, data visualization, and statistical modeling, I specialize in solving complex problems and crafting innovative solutions. My work spans a variety of industries, from healthcare to finance, where I strive to make data more meaningful and accessible.
+**Statistician / Data Enthusiast**  
+Luxembourg and Belgium  
+✉️ [fabricevb@hotmail.com](mailto:fabricevb@hotmail.com)  
+🐙 [github.com/fabricevb](https://github.com/fabricevb)  
+💼 [LinkedIn](https://www.linkedin.com/in/fabricevb/)
 
-On this website, you’ll find:
-- **Projects**: A showcase of my key data science projects, complete with visualizations and code samples.
-- **Blog**: Insights and tutorials on machine learning, Python, and data analysis.
-- **About Me**: Learn more about my background, skills, and professional journey.
+---
 
-Feel free to explore, and don’t hesitate to connect with me on [LinkedIn](https://linkedin.com/in/fabricevb) or [GitHub](https://github.com/fabricevb). Let’s make data work for us!
+## Who Am I?
 
-Thank you for visiting, and I hope you enjoy your stay!
+Dynamic and results-oriented data scientist and statistician with a proven track record of delivering high-quality projects and solutions. I possess a deep understanding of legal, economic, and data aspects in complex litigation. My expertise in programming languages enables me to turn data into actionable insights. Passionate about innovation and problem-solving, I am always seeking new challenges and opportunities.
+
+### Skills
+
+- **R**: 100%  
+- **Python**: 100%  
+- **SQL**: 100%  
+- **Power BI**: 90%  
+- **Git**: 80%  
+- **SAS**: 80%  
+- **STATA**: 40%
+
+---
+
+## Experience
+
+### Administrateur / Data Scientist
+**Court of Justice of the EU - InnovationLab**
+- AI, ML, LLM, ...
+
+### (Senior) Statistician / Data Scientist  
+**CDC Cartel Damage Claims Consulting** (1/2019 – Current)  
+- Lead and coordinate all aspects of data collection and analysis, communicating effectively with external parties across Europe.  
+- Develop and maintain coding pipelines, create interactive dashboards, and perform econometric modeling.  
+- Handle data, economics, and legal aspects within court proceedings.  
+- Spearheaded automation and workflow enhancement projects.  
+
+**Key Skills**: Project Management, Data Mining, Advanced Analytics, Competition Law, Statistical Modelling, Big Data, Kedro, Airflow, AWS, Azure, R, Python, SQL
+
+---
+
+### Research Intern  
+**National Bank of Belgium** (9/2018 – 6/2019)  
+- Conducted research on predicting national growth based on survey data.  
+- Presented findings at the 2019 Central Bank Business Survey (CBBS) conference and the National Bank's Council of Regency.  
+
+**Key Skills**: R, Data Management, Statistical Modelling, Time Series Analysis
+
+---
+
+## Education
+
+- **LL.M. in Competition Law and Economics**  
+  **Brussels School of Competition** (2020 – 2021)  
+  Thesis: *The economic approach and the need for legal certainty in competition damage claims*  
+
+- **MSc. in Statistics**  
+  **KU Leuven** (2016 – 2019)  
+  Thesis: *The Variability of the Belgian Business Survey Indicator - analysis and predictive power*  
+
+- **Bachelor in Political Science**  
+  **Université Libre de Bruxelles** (2013 – 2016)  
+  Erasmus: Universidade Católica Portuguesa, Portugal  
+
+---
+
+## Languages
+
+- **French**: Native  
+- **English**: Fluent  
+- **Dutch**: Fluent  
+
+---
+
+## Hobbies
+
+- Climbing  
+- Cycling  
+- Tennis  
+- Chess  
+
+---
+
+## Non-Profit
+
+Treasurer and board member at **Famisol**, an NGO supporting families with disabled children.
+
+---
+
+## Certifications
+
+- **Cybersecurity Certificate**, Google (9/2023)  
+- **Publishing Visualizations in R with Shiny and flexdashboard**, Coursera (11/2022)  
+- **Microsoft Azure Machine Learning for Data Scientists**, Microsoft (10/2022)  
+- **Practical Data Science on the AWS Cloud Specialization**, DeepLearning.AI (10/2022)  
+- **Project Management Certification**, Google (4/2022)  
+- **Graduated Statistician (GradStat)**, Royal Statistical Society (6/2020 – Current)
+
+---
+
+## Projects Worked On
+
+1. **Document Submission Automation**: Developed a Python and R-based system for court document submission.  
+2. **Data Automation**: Streamlined data collection and cleaning workflows using Kedro, Airflow, and Python.  
+3. **Quantitative Analysis for Damage Quantification**: Led analyses to assess damages, ensuring accuracy and validity.  
+4. **Public Data Processing**: Automated data gathering from Eurostat, ECB, and IMF for economic analysis.  
+5. **Email Communication System**: Built a system for automated, personalized email communication.  
+6. **Interactive Dashboard Design**: Designed dashboards using R (Shiny, Flexdashboard) and Python (Streamlit).  
+7. **Litigation Risk Analysis**: Monitored and analyzed litigation risks.  
+8. **Expert Report Co-authorship**: Co-authored expert reports and published blog posts on legal-economic topics.  
+
+**Featured Blog Posts**:  
+- [Decoding Transaction Data in Private Competition Law Damage Litigations](https://www.lexology.com/library/detail.aspx?g=27c15931-634a-4b85-a808-deea3fbcdbc5)  
+- [Challenges in Quantifying Private Antitrust Damages](https://www.lexology.com/library/detail.aspx?g=f9b77257-81f2-40bc-90a6-98e51e9d117b)  
+- [General Court Dismisses Scania’s Appeal in the Truck Cartel Case](https://www.lexology.com/library/detail.aspx?g=24f37af4-4478-4ebab158-3410faf19f84)
