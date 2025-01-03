@@ -10,28 +10,18 @@ Luxembourg and Belgium
 
 ## Who Am I?
 
-Dynamic and results-oriented data scientist and statistician with a proven track record of delivering high-quality projects and solutions. I possess a deep understanding of legal, economic, and data aspects in complex litigation. My expertise in programming languages enables me to turn data into actionable insights. Passionate about innovation and problem-solving, I am always seeking new challenges and opportunities.
-
-### Skills
-
-- **R**: 100%  
-- **Python**: 100%  
-- **SQL**: 100%  
-- **Power BI**: 90%  
-- **Git**: 80%  
-- **SAS**: 80%  
-- **STATA**: 40%
+Dynamic and results-oriented data scientist and statistician with a proven track record of delivering high-quality projects and solutions. I possess a deep understanding of legal, economic, and data aspects in complex litigation. My expertise in data and programming languages enables me to turn data into action. Passionate about innovation and problem-solving, I am always seeking new challenges and opportunities.
 
 ---
 
 ## Experience
 
 ### Administrateur / Data Scientist
-**Court of Justice of the EU - InnovationLab**
+**Court of Justice of the EU - InnovationLab** (10/2024 – current)
 - AI, ML, LLM, ...
 
 ### (Senior) Statistician / Data Scientist  
-**CDC Cartel Damage Claims Consulting** (1/2019 – Current)  
+**CDC Cartel Damage Claims Consulting** (1/2019 – 6/2024)  
 - Lead and coordinate all aspects of data collection and analysis, communicating effectively with external parties across Europe.  
 - Develop and maintain coding pipelines, create interactive dashboards, and perform econometric modeling.  
 - Handle data, economics, and legal aspects within court proceedings.  
@@ -115,3 +105,13 @@ Treasurer and board member at **Famisol**, an NGO supporting families with disab
 - [Decoding Transaction Data in Private Competition Law Damage Litigations](https://www.lexology.com/library/detail.aspx?g=27c15931-634a-4b85-a808-deea3fbcdbc5)  
 - [Challenges in Quantifying Private Antitrust Damages](https://www.lexology.com/library/detail.aspx?g=f9b77257-81f2-40bc-90a6-98e51e9d117b)  
 - [General Court Dismisses Scania’s Appeal in the Truck Cartel Case](https://www.lexology.com/library/detail.aspx?g=24f37af4-4478-4ebab158-3410faf19f84)
+
+### Coding
+
+- **R**: 100%  
+- **Python**: 100%  
+- **SQL**: 100%  
+- **Power BI**: 90%  
+- **Git**: 80%  
+- **SAS**: 80%  
+- **STATA**: 40%
