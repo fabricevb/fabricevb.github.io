@@ -1,0 +1,17 @@
+title: "Fabrice Van Boeckel"
+description: "Data Scientist | Portfolio and Blog"
+theme: jekyll-theme-slate
+url: "https://fabricevb.github.io" # Your GitHub Pages URL
+baseurl: "" # Leave this blank unless your site is in a subdirectory
+
+# Social Links
+social_links:
+  - name: GitHub
+    url: https://github.com/fabricevb
+  - name: LinkedIn
+    url: https://linkedin.com/in/fabricevb
+
+
+# Optional: Markdown settings
+markdown: kramdown
+highlighter: rouge
