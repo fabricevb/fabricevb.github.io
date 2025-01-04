@@ -1,4 +1,3 @@
-# Fabrice Van Boeckel
 
 **Statistician / Data Enthusiast**  
 Luxembourg and Belgium  
@@ -8,6 +7,11 @@ Luxembourg and Belgium
 
 ---
 
+## Not much here yet. 
+## Will add more in the near futur
+## For the moment, find my CV below 
+
+
 ## Who Am I?
 
 Dynamic and results-oriented data scientist and statistician with a proven track record of delivering high-quality projects and solutions. I possess a deep understanding of legal, economic, and data aspects in complex litigation. My expertise in data and programming languages enables me to turn data into action. Passionate about innovation and problem-solving, I am always seeking new challenges and opportunities.
@@ -16,7 +20,7 @@ Dynamic and results-oriented data scientist and statistician with a proven track
 
 ## Experience
 
-### Administrateur / Data Scientist
+### Data Scientist (Administrateur)
 **Court of Justice of the EU - InnovationLab** (10/2024 – current)
 - AI, ML, LLM, ...
 
