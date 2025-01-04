@@ -29,8 +29,6 @@ Dynamic and results-oriented data scientist and statistician with a proven track
 
 **Key Skills**: Project Management, Data Mining, Advanced Analytics, Competition Law, Statistical Modelling, Big Data, Kedro, Airflow, AWS, Azure, R, Python, SQL
 
----
-
 ### Research Intern  
 **National Bank of Belgium** (9/2018 – 6/2019)  
 - Conducted research on predicting national growth based on survey data.  
@@ -54,6 +52,10 @@ Dynamic and results-oriented data scientist and statistician with a proven track
   **Université Libre de Bruxelles** (2013 – 2016)  
   Erasmus: Universidade Católica Portuguesa, Portugal  
 
+## Non-Profit
+
+Treasurer and board member at **Famisol**, an NGO supporting families with disabled children.
+
 ---
 
 ## Languages
@@ -70,12 +72,6 @@ Dynamic and results-oriented data scientist and statistician with a proven track
 - Cycling  
 - Tennis  
 - Chess  
-
----
-
-## Non-Profit
-
-Treasurer and board member at **Famisol**, an NGO supporting families with disabled children.
 
 ---
 
