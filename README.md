@@ -104,8 +104,7 @@ Treasurer and board member at **Famisol**, an NGO supporting families with disab
 **Featured Blog Posts**:  
 - [Decoding Transaction Data in Private Competition Law Damage Litigations](https://www.lexology.com/library/detail.aspx?g=27c15931-634a-4b85-a808-deea3fbcdbc5)  
 - [Challenges in Quantifying Private Antitrust Damages](https://www.lexology.com/library/detail.aspx?g=f9b77257-81f2-40bc-90a6-98e51e9d117b)  
-- [General Court Dismisses Scania’s Appeal in the Truck Cartel Case](https://www.lexology.com/library/detail.aspx?g=24f37af4-4478-4ebab158-3410faf19f84)
-
+- [General Court Dismisses Scania’s Appeal in the Truck Cartel Case](https://www.lexology.com/library/detail.aspx?g=24f37af4-4478-4eba-b158-3410faf19f84)
 
 ---
 
