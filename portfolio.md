@@ -3,13 +3,20 @@ layout: default
 title: "Portfolio"
 ---
 
-# Portfolio
-## Project 1: Predicting Housing Prices
-- Description:
-- Tools: Python, Scikit-Learn, Matplotlib.
-- [View Project](https://github.com/username/project1)
+![Museum Night Fever](images/image.png) 
 
-## Project 2: Visualizing COVID-19 Trends
-- Description:
-- Tools: Python, Plotly, Dash.
-- [View Project](https://github.com/username/project2)
+![Char gendarmerie](images/image(1).png) 
+
+![Gilets jaunes](images/image(2).png) 
+
+![levé du jour](images/image(3).png)
+
+![levé du jour bis](images/image(4).png) 
+
+![Arles lunch](images/image(5).png) 
+
+![Me](images/image(6).png) 
+
+![India](images/image(7).png) 
+
+![Arles on the way](images/image(8).png)
