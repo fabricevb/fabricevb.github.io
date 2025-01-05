@@ -15,8 +15,6 @@ title: "Portfolio"
 
 ![Arles lunch](images/image(5).png) 
 
-![Me](images/image(6).png) 
+![Arles on the way](images/image(8).png)
 
 ![India](images/image(7).png) 
-
-![Arles on the way](images/image(8).png)
