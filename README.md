@@ -22,7 +22,7 @@ Dynamic and results-oriented data scientist and statistician with a proven track
 
 ### Data Scientist (Administrateur)
 **Court of Justice of the EU - InnovationLab** (10/2024 – current)
-- AI, ML, LLM, ...
+- AI, GenAI, ML, LLM, ...
 
 ### (Senior) Statistician / Data Scientist  
 **CDC Cartel Damage Claims Consulting** (1/2019 – 6/2024)  
@@ -40,6 +40,10 @@ Dynamic and results-oriented data scientist and statistician with a proven track
 
 **Key Skills**: R, Data Management, Statistical Modelling, Time Series Analysis
 
+## Non-Profit
+
+Treasurer and board member at **Famisol**, an NGO supporting families with disabled children.
+
 ---
 
 ## Education
@@ -55,10 +59,6 @@ Dynamic and results-oriented data scientist and statistician with a proven track
 - **Bachelor in Political Science**  
   **Université Libre de Bruxelles** (2013 – 2016)  
   Erasmus: Universidade Católica Portuguesa, Portugal  
-
-## Non-Profit
-
-Treasurer and board member at **Famisol**, an NGO supporting families with disabled children.
 
 ---
 
