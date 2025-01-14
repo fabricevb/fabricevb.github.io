@@ -81,12 +81,13 @@ Treasurer and board member at **Famisol**, an NGO supporting families with disab
 
 ## Certifications
 
+- **Graduated Statistician (GradStat)**, Royal Statistical Society (6/2020 – Current)
+- - **Natural Language Processing Specialization**, DeepLearning.AI (9/2024)
 - **Cybersecurity Certificate**, Google (9/2023)  
 - **Publishing Visualizations in R with Shiny and flexdashboard**, Coursera (11/2022)  
 - **Microsoft Azure Machine Learning for Data Scientists**, Microsoft (10/2022)  
 - **Practical Data Science on the AWS Cloud Specialization**, DeepLearning.AI (10/2022)  
-- **Project Management Certification**, Google (4/2022)  
-- **Graduated Statistician (GradStat)**, Royal Statistical Society (6/2020 – Current)
+- **Project Management Certification**, Google (4/2022)
 
 ---
 
