@@ -22,4 +22,4 @@ I am passionate about turning complex data into clear, actionable insights. My e
 ## Looking for new opportunities
 Interested in leveraging data to drive results? Let's connect!
 
-[About Me](about.html) | [Portfolio](portfolio.html) | [CV](cv.html)
+[About Me](about.html) | [Portfolio](portfolio.html)
