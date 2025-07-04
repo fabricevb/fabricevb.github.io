@@ -8,7 +8,7 @@ Luxembourg and Belgium
 ---
 
 ## Not much here yet. 
-## Will add more in the near futur
+## Will add more in the near future
 ## For the moment, find my CV below 
 
 
@@ -82,7 +82,7 @@ Treasurer and board member at **Famisol**, an NGO supporting families with disab
 ## Certifications
 
 - **Graduated Statistician (GradStat)**, Royal Statistical Society (6/2020 – Current)
-- - **Natural Language Processing Specialization**, DeepLearning.AI (9/2024)
+- **Natural Language Processing Specialization**, DeepLearning.AI (9/2024)
 - **Cybersecurity Certificate**, Google (9/2023)  
 - **Publishing Visualizations in R with Shiny and flexdashboard**, Coursera (11/2022)  
 - **Microsoft Azure Machine Learning for Data Scientists**, Microsoft (10/2022)  
