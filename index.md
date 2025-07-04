@@ -4,8 +4,8 @@ title: "Fabrice Van Boeckel"
 ---
 
 # Fabrice Van Boeckel
-**Statistician / Data Scientist**  
-Luxembourg and Belgium  
+**Statistician / Data Scientist**
+Luxembourg and Belgium
 [Email](mailto:fabricevb@hotmail.com) • [GitHub](https://github.com/fabricevb) • [LinkedIn](https://www.linkedin.com/in/fabricevb/)
 
 ---
@@ -22,4 +22,4 @@ I am passionate about turning complex data into clear, actionable insights. My e
 ## Looking for new opportunities
 Interested in leveraging data to drive results? Let's connect!
 
-[About Me](about.html) | [Portfolio](portfolio.html)
+[About Me](about.html) | [Portfolio](portfolio.html) | [Art Events](events.html)
