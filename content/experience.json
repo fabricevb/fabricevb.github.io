@@ -2,26 +2,52 @@
   {
     "role": {
       "en": "Data Scientist (Administrator)",
-      "fr": "Data Scientist (Administrateur)",
-      "nl": "Data Scientist (Administrateur)"
+      "fr": "Data scientist (administrateur)",
+      "nl": "Data scientist (administrateur)"
     },
     "org": "Court of Justice of the European Union – Innovation Lab",
-    "dates": "2024 – Present",
+    "dates": "Oct 2024 – Present",
     "details": {
       "en": [
-        "Lead NLP and Artificial Intelligence solutions for text classification, NER, summarization, and decision support.",
-        "Drive data governance and deployment into the broader IT landscape.",
-        "Partner with legal and technical stakeholders to embed AI responsibly."
+        "Develop NLP models for legal document classification, NER, summarization, and semantic analysis.",
+        "Design data pipelines for ingestion, preprocessing, and storage of multilingual legal data.",
+        "Coordinate with legal experts and IT teams to ensure governance, transparency, and AI ethics."
       ],
       "fr": [
-        "Pilotage de solutions NLP et d’Artificial Intelligence pour la classification de textes, la NER, le résumé et l’aide à la décision.",
-        "Mise en place de la gouvernance des données et du déploiement dans l’écosystème IT.",
-        "Collaboration avec les parties prenantes juridiques et techniques pour un usage responsable de l’IA."
+        "Développement de modèles NLP pour la classification de documents juridiques, la NER, le résumé et l’analyse sémantique.",
+        "Conception de pipelines de données pour l’ingestion, le prétraitement et le stockage de données juridiques multilingues.",
+        "Coordination avec les experts juridiques et l’IT pour la gouvernance, la transparence et l’éthique de l’IA."
       ],
       "nl": [
-        "Leiden van NLP- en Artificial Intelligence-oplossingen voor tekstclassificatie, NER, samenvatting en beslissingsondersteuning.",
-        "Datagovernance en uitrol in het bredere IT-landschap.",
-        "Samenwerking met juridische en technische stakeholders voor verantwoorde AI."
+        "Ontwikkeling van NLP-modellen voor classificatie van juridische documenten, NER, samenvatting en semantische analyse.",
+        "Ontwerp van datapijplijnen voor ingestie, preprocessing en opslag van meertalige juridische data.",
+        "Afstemming met juridische experts en IT-teams rond governance, transparantie en AI-ethiek."
+      ]
+    }
+  },
+  {
+    "role": {
+      "en": "Reserve Navy Officer – Advisor in Data Science",
+      "fr": "Officier de réserve – conseiller en data science",
+      "nl": "Reserveofficier – adviseur data science"
+    },
+    "org": "Belgian Defence – Navy",
+    "dates": "Jul 2023 – Present",
+    "details": {
+      "en": [
+        "Advise on data-driven capabilities for operational planning, resource management, and situational awareness.",
+        "Build analytical tools and provide support for data-related projects across naval units.",
+        "Complete military training and support protocol and representation duties, including the 2024 Navy Hackathon."
+      ],
+      "fr": [
+        "Conseil sur les capacités data pour la planification opérationnelle, la gestion des ressources et la conscience situationnelle.",
+        "Conception d’outils analytiques et appui aux projets data des unités navales.",
+        "Formation militaire et soutien aux missions protocolaires, notamment lors du Navy Hackathon 2024."
+      ],
+      "nl": [
+        "Advies over datagedreven capaciteiten voor operationele planning, middelenbeheer en situational awareness.",
+        "Bouwen van analysetools en ondersteuning van data-projecten binnen marine-eenheden.",
+        "Militaire opleiding en ondersteuning van protocol- en representatietaken, inclusief de Navy Hackathon 2024."
       ]
     }
   },
@@ -32,45 +58,22 @@
       "nl": "Senior statisticus / econometrist"
     },
     "org": "CDC Cartel Damage Claims Consulting",
-    "dates": "2020 – 2022",
+    "dates": "Jan 2019 – Jul 2024",
     "details": {
       "en": [
-        "Built automated pipelines for econometric models and litigation analytics.",
-        "Developed interactive dashboards and reproducible reporting.",
-        "Worked with Python, R, SQL, Airflow, Git; cloud on AWS and Azure."
+        "Led econometric analyses for EU-wide cartel damages cases and coordinated stakeholders.",
+        "Built automated data pipelines and dashboards using Python, R, SQL, Airflow, and Git.",
+        "Managed structured submissions of large datasets and documentation to courts."
       ],
       "fr": [
-        "Conception de pipelines automatisés pour les modèles économétriques et l’analytics contentieux.",
-        "Développement de dashboards interactifs et de reporting reproductible.",
-        "Outils : Python, R, SQL, Airflow, Git ; cloud AWS et Azure."
+        "Pilotage d’analyses économétriques pour des dossiers de dommages liés aux cartels et coordination des parties prenantes.",
+        "Mise en place de pipelines automatisés et de dashboards avec Python, R, SQL, Airflow et Git.",
+        "Gestion des dépôts structurés de grands jeux de données et de la documentation auprès des tribunaux."
       ],
       "nl": [
-        "Geautomatiseerde pijplijnen gebouwd voor econometrische modellen en litigation analytics.",
-        "Interactieve dashboards en reproduceerbare rapportage ontwikkeld.",
-        "Tooling: Python, R, SQL, Airflow, Git; cloud op AWS en Azure."
-      ]
-    }
-  },
-  {
-    "role": {
-      "en": "Statistician / Econometrician",
-      "fr": "Statisticien / économétricien",
-      "nl": "Statisticus / econometrist"
-    },
-    "org": "CDC Cartel Damage Claims Consulting",
-    "dates": "2019 – 2020",
-    "details": {
-      "en": [
-        "Delivered econometric modelling and data analysis for competition law cases.",
-        "Automated data ingestion for Eurostat, ECB, and IMF datasets."
-      ],
-      "fr": [
-        "Modélisation économétrique et analyses de données pour des affaires de droit de la concurrence.",
-        "Automatisation de l’ingestion des données Eurostat, BCE et FMI."
-      ],
-      "nl": [
-        "Econometrische modellering en data-analyse voor mededingingszaken geleverd.",
-        "Automatisering van data-inname voor Eurostat-, ECB- en IMF-datasets."
+        "Leiding gegeven aan econometrische analyses voor EU-brede kartelschadezaken en coördinatie van stakeholders.",
+        "Geautomatiseerde datapijplijnen en dashboards gebouwd met Python, R, SQL, Airflow en Git.",
+        "Structuur gebracht in de indiening van grote datasets en documentatie bij rechtbanken."
       ]
     }
   },
@@ -81,19 +84,22 @@
       "nl": "Onderzoeksstagiair"
     },
     "org": "National Bank of Belgium",
-    "dates": "2018",
+    "dates": "Aug 2018 – Jun 2019",
     "details": {
       "en": [
-        "Researched the predictive power of the Belgian Business Survey.",
-        "Built statistical models for macroeconomic forecasting."
+        "Studied the variability and predictive power of the Belgian Business Survey Indicator.",
+        "Built time series forecasting models and a new response-variability indicator in R.",
+        "Presented findings at the Central Bank Business Survey (CBBS) 2019 conference."
       ],
       "fr": [
-        "Étude du pouvoir prédictif de la Belgian Business Survey.",
-        "Construction de modèles statistiques pour la prévision macroéconomique."
+        "Étude de la variabilité et du pouvoir prédictif de la Belgian Business Survey Indicator.",
+        "Construction de modèles de prévision en séries temporelles et d’un indicateur de variabilité des réponses en R.",
+        "Présentation des résultats à la conférence Central Bank Business Survey (CBBS) 2019."
       ],
       "nl": [
-        "Onderzoek naar de voorspellende kracht van de Belgian Business Survey.",
-        "Statistische modellen gebouwd voor macro-economische voorspelling."
+        "Onderzoek naar de variabiliteit en voorspellende kracht van de Belgian Business Survey Indicator.",
+        "Tijdreeksmodellen voor forecasting en een nieuwe variabiliteitsindicator in R ontwikkeld.",
+        "Resultaten gepresenteerd op de Central Bank Business Survey (CBBS) 2019 conferentie."
       ]
     }
   }
