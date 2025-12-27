@@ -1,93 +1,219 @@
 [
   {
     "id": "document-submission-automation",
-    "title": "Document submission automation",
-    "summary": "Automated multilingual document intake and validation workflows for court-ready data pipelines.",
+    "title": {
+      "en": "Document submission automation",
+      "fr": "Automatisation des dépôts de documents",
+      "nl": "Automatisering van documentindiening"
+    },
+    "summary": {
+      "en": "Automated multilingual document intake and validation workflows for court-ready data pipelines with Artificial Intelligence.",
+      "fr": "Automatisation de l’ingestion multilingue et des validations pour des pipelines prêts pour les tribunaux, avec l’Artificial Intelligence.",
+      "nl": "Geautomatiseerde meertalige documentinname en validatie voor rechtbankklare datapijplijnen met Artificial Intelligence."
+    },
     "themes": ["NLP", "automation", "legal-tech"],
     "tools": ["Python", "NLP", "SQL", "Airflow"],
     "year": 2024,
-    "impact": [
-      "Reduced manual triage and data entry for legal teams.",
-      "Improved traceability and governance across submissions."
-    ],
+    "impact": {
+      "en": [
+        "Reduced manual triage and data entry for legal teams.",
+        "Improved traceability and governance across submissions."
+      ],
+      "fr": [
+        "Réduction du tri manuel et de la saisie de données pour les équipes juridiques.",
+        "Traçabilité et gouvernance renforcées sur l’ensemble des dépôts."
+      ],
+      "nl": [
+        "Verminderde handmatige triage en data-invoer voor juridische teams.",
+        "Betere traceerbaarheid en governance over alle inzendingen."
+      ]
+    },
     "stack": "Python, spaCy, SQL, Airflow, Git"
   },
   {
     "id": "case-law-text-classification",
-    "title": "Case-law text classification",
-    "summary": "Built classification models to route and prioritize case-law documents for faster review.",
+    "title": {
+      "en": "Case-law text classification",
+      "fr": "Classification de textes jurisprudentiels",
+      "nl": "Classificatie van jurisprudentieteksten"
+    },
+    "summary": {
+      "en": "Built classification models to route and prioritize case-law documents for faster review.",
+      "fr": "Conception de modèles de classification pour orienter et prioriser les documents de jurisprudence plus rapidement.",
+      "nl": "Ontwikkelde classificatiemodellen om jurisprudentiedocumenten te routeren en te prioriteren voor snellere beoordeling."
+    },
     "themes": ["NLP", "legal-tech"],
     "tools": ["Python", "NLP", "ML"],
     "year": 2023,
-    "impact": [
-      "Increased consistency in document routing decisions.",
-      "Enabled reusable NLP pipelines for new domains."
-    ],
+    "impact": {
+      "en": [
+        "Increased consistency in document routing decisions.",
+        "Enabled reusable NLP pipelines for new domains."
+      ],
+      "fr": [
+        "Décisions d’orientation plus cohérentes pour les documents.",
+        "Pipelines NLP réutilisables pour de nouveaux domaines."
+      ],
+      "nl": [
+        "Consistentere routeringsbeslissingen voor documenten.",
+        "Herbruikbare NLP-pijplijnen voor nieuwe domeinen mogelijk gemaakt."
+      ]
+    },
     "stack": "Python, scikit-learn, spaCy, MLflow"
   },
   {
     "id": "damages-quantification-model",
-    "title": "Damages quantification modelling",
-    "summary": "Designed econometric models for cartel damages estimation in competition cases.",
+    "title": {
+      "en": "Damages quantification modelling",
+      "fr": "Modélisation de quantification des dommages",
+      "nl": "Modellering van schadebegroting"
+    },
+    "summary": {
+      "en": "Designed econometric models for cartel damages estimation in competition cases.",
+      "fr": "Conception de modèles économétriques pour estimer les dommages dans des affaires de concurrence.",
+      "nl": "Ontworpen econometrische modellen voor het schatten van kartelschade in mededingingszaken."
+    },
     "themes": ["econometrics", "legal-tech"],
     "tools": ["R", "Python", "STATA"],
     "year": 2022,
-    "impact": [
-      "Provided defensible estimates for litigation support.",
-      "Streamlined model validation across multiple datasets."
-    ],
+    "impact": {
+      "en": [
+        "Provided defensible estimates for litigation support.",
+        "Streamlined model validation across multiple datasets."
+      ],
+      "fr": [
+        "Estimations défendables pour le soutien aux litiges.",
+        "Validation des modèles rationalisée sur plusieurs jeux de données."
+      ],
+      "nl": [
+        "Verdedigbare schattingen voor procesondersteuning geleverd.",
+        "Modelvalidatie gestroomlijnd over meerdere datasets."
+      ]
+    },
     "stack": "R, Python, STATA"
   },
   {
     "id": "end-to-end-data-automation",
-    "title": "End-to-end data automation",
-    "summary": "Automated ingestion, transformation, and reporting across multi-source datasets.",
+    "title": {
+      "en": "End-to-end data automation",
+      "fr": "Automatisation des données de bout en bout",
+      "nl": "End-to-end data-automatisering"
+    },
+    "summary": {
+      "en": "Automated ingestion, transformation, and reporting across multi-source datasets.",
+      "fr": "Automatisation de l’ingestion, de la transformation et du reporting sur des jeux de données multi-sources.",
+      "nl": "Automatisering van ingestie, transformatie en rapportage over multi-source datasets."
+    },
     "themes": ["automation", "dashboards"],
     "tools": ["Python", "Airflow", "SQL"],
     "year": 2021,
-    "impact": [
-      "Significantly improved delivery speed for recurring analyses.",
-      "Cut manual QA time with automated checks."
-    ],
+    "impact": {
+      "en": [
+        "Significantly improved delivery speed for recurring analyses.",
+        "Cut manual QA time with automated checks."
+      ],
+      "fr": [
+        "Accélération significative de la livraison des analyses récurrentes.",
+        "Réduction du temps de QA manuel grâce à des contrôles automatisés."
+      ],
+      "nl": [
+        "De levertijd van terugkerende analyses aanzienlijk versneld.",
+        "Handmatige QA-tijd verkort met geautomatiseerde controles."
+      ]
+    },
     "stack": "Python, Airflow, SQL, Git"
   },
   {
     "id": "public-data-processing",
-    "title": "Public data processing",
-    "summary": "Built reusable pipelines for Eurostat, ECB, and IMF datasets.",
+    "title": {
+      "en": "Public data processing",
+      "fr": "Traitement des données publiques",
+      "nl": "Verwerking van publieke data"
+    },
+    "summary": {
+      "en": "Built reusable pipelines for Eurostat, ECB, and IMF datasets.",
+      "fr": "Création de pipelines réutilisables pour les jeux de données Eurostat, BCE et FMI.",
+      "nl": "Bouwde herbruikbare pijplijnen voor Eurostat-, ECB- en IMF-datasets."
+    },
     "themes": ["automation", "econometrics"],
     "tools": ["Python", "R", "SQL"],
     "year": 2021,
-    "impact": [
-      "Enabled faster scenario analysis for economists.",
-      "Improved data consistency across client reports."
-    ],
+    "impact": {
+      "en": [
+        "Enabled faster scenario analysis for economists.",
+        "Improved data consistency across client reports."
+      ],
+      "fr": [
+        "Analyse de scénarios plus rapide pour les économistes.",
+        "Meilleure cohérence des données dans les rapports clients."
+      ],
+      "nl": [
+        "Snellere scenarioanalyse mogelijk gemaakt voor economen.",
+        "Betere dataconsistentie in klantrapporten."
+      ]
+    },
     "stack": "Python, R, SQL"
   },
   {
     "id": "interactive-dashboards",
-    "title": "Interactive dashboards",
-    "summary": "Delivered Shiny and Streamlit dashboards for analytics stakeholders.",
+    "title": {
+      "en": "Interactive dashboards",
+      "fr": "Tableaux de bord interactifs",
+      "nl": "Interactieve dashboards"
+    },
+    "summary": {
+      "en": "Delivered Shiny and Streamlit dashboards for analytics stakeholders.",
+      "fr": "Livraison de tableaux de bord Shiny et Streamlit pour les parties prenantes analytics.",
+      "nl": "Levering van Shiny- en Streamlit-dashboards voor analytics-stakeholders."
+    },
     "themes": ["dashboards", "automation"],
     "tools": ["R", "Python", "PowerBI"],
     "year": 2020,
-    "impact": [
-      "Made complex outputs accessible to non-technical users.",
-      "Standardized KPI reporting across engagements."
-    ],
+    "impact": {
+      "en": [
+        "Made complex outputs accessible to non-technical users.",
+        "Standardized KPI reporting across engagements."
+      ],
+      "fr": [
+        "Rendu les résultats complexes accessibles aux non-techniciens.",
+        "Standardisation du reporting KPI sur les missions."
+      ],
+      "nl": [
+        "Complexe outputs toegankelijk gemaakt voor niet-technische gebruikers.",
+        "KPI-rapportering gestandaardiseerd over opdrachten heen."
+      ]
+    },
     "stack": "R Shiny, Streamlit, PowerBI"
   },
   {
     "id": "litigation-risk-analysis",
-    "title": "Litigation risk analysis",
-    "summary": "Quantified litigation exposure using structured + text data signals.",
+    "title": {
+      "en": "Litigation risk analysis",
+      "fr": "Analyse du risque de contentieux",
+      "nl": "Analyse van procesrisico"
+    },
+    "summary": {
+      "en": "Quantified litigation exposure using structured + text data signals.",
+      "fr": "Quantification de l’exposition au contentieux via des signaux de données structurées et textuelles.",
+      "nl": "Kwantificeerde procesrisico met gestructureerde en tekstuele datasignalen."
+    },
     "themes": ["legal-tech", "NLP"],
     "tools": ["Python", "SQL", "NLP"],
     "year": 2020,
-    "impact": [
-      "Supported legal teams with risk scoring insights.",
-      "Enhanced narrative reporting with NLP evidence."
-    ],
+    "impact": {
+      "en": [
+        "Supported legal teams with risk scoring insights.",
+        "Enhanced narrative reporting with NLP evidence."
+      ],
+      "fr": [
+        "Aide aux équipes juridiques via des scores de risque.",
+        "Renforcement des rapports narratifs avec des preuves NLP."
+      ],
+      "nl": [
+        "Juridische teams ondersteund met risico-inzichten.",
+        "Narratieve rapportage versterkt met NLP-bewijs."
+      ]
+    },
     "stack": "Python, SQL, NLP"
   }
 ]

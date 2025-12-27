@@ -1,16 +1,28 @@
 [
   {
-    "degree": "LL.M. Competition Law & Economics",
-    "org": "Brussels School of Competition (BSC)",
-    "dates": "2020 – 2021"
-  },
-  {
-    "degree": "MSc Statistics",
+    "degree": {
+      "en": "MSc Statistics",
+      "fr": "Master en statistique",
+      "nl": "Master Statistiek"
+    },
     "org": "KU Leuven",
-    "dates": "2016 – 2019"
+    "dates": "2018 – 2019"
   },
   {
-    "degree": "Bachelor Political Science",
+    "degree": {
+      "en": "LL.M Competition Law & Economics",
+      "fr": "LL.M Droit et économie de la concurrence",
+      "nl": "LL.M Mededingingsrecht & Economie"
+    },
+    "org": "Vrije Universiteit Brussel",
+    "dates": "2017 – 2018"
+  },
+  {
+    "degree": {
+      "en": "Bachelor Political Science",
+      "fr": "Bachelier en science politique",
+      "nl": "Bachelor Politicologie"
+    },
     "org": "Université Libre de Bruxelles",
     "dates": "2013 – 2016"
   }

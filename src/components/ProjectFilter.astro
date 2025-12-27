@@ -1,13 +1,28 @@
 ---
 const { projects } = Astro.props;
+const themeLabels = {
+  NLP: { fr: "NLP", nl: "NLP" },
+  automation: { fr: "Automatisation", nl: "Automatisering" },
+  dashboards: { fr: "Tableaux de bord", nl: "Dashboards" },
+  econometrics: { fr: "Économétrie", nl: "Econometrie" },
+  "legal-tech": { fr: "Legal-tech", nl: "Legal-tech" }
+};
 ---
 <section class="section">
   <div class="container">
     <div class="section-title">
-      <h2>Project finder</h2>
-      <span class="badge">Filter + search</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Project finder</span>
+        <span class="lang-inline" data-lang="fr">Recherche de projets</span>
+        <span class="lang-inline" data-lang="nl">Projectzoeker</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Filter + search</span>
+        <span class="lang-inline" data-lang="fr">Filtrer + rechercher</span>
+        <span class="lang-inline" data-lang="nl">Filteren + zoeken</span>
+      </span>
     </div>
-    <div class="filter-bar">
+    <div class="filter-bar lang-filter is-active" data-lang="en">
       <input type="search" placeholder="Search projects" aria-label="Search projects" data-search />
       <select data-theme>
         <option value="all">All themes</option>
@@ -34,22 +49,88 @@ const { projects } = Astro.props;
         <option value="2020">2020</option>
       </select>
     </div>
+    <div class="filter-bar lang-filter" data-lang="fr">
+      <input type="search" placeholder="Rechercher un projet" aria-label="Rechercher un projet" data-search />
+      <select data-theme>
+        <option value="all">Tous les thèmes</option>
+        <option value="NLP">NLP</option>
+        <option value="automation">Automatisation</option>
+        <option value="dashboards">Tableaux de bord</option>
+        <option value="econometrics">Économétrie</option>
+        <option value="legal-tech">Legal-tech</option>
+      </select>
+      <select data-tool>
+        <option value="all">Tous les outils</option>
+        <option value="Python">Python</option>
+        <option value="R">R</option>
+        <option value="SQL">SQL</option>
+        <option value="Airflow">Airflow</option>
+        <option value="Cloud">Cloud</option>
+      </select>
+      <select data-year>
+        <option value="all">Toutes les années</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+    </div>
+    <div class="filter-bar lang-filter" data-lang="nl">
+      <input type="search" placeholder="Zoek projecten" aria-label="Zoek projecten" data-search />
+      <select data-theme>
+        <option value="all">Alle thema's</option>
+        <option value="NLP">NLP</option>
+        <option value="automation">Automatisering</option>
+        <option value="dashboards">Dashboards</option>
+        <option value="econometrics">Econometrie</option>
+        <option value="legal-tech">Legal-tech</option>
+      </select>
+      <select data-tool>
+        <option value="all">Alle tools</option>
+        <option value="Python">Python</option>
+        <option value="R">R</option>
+        <option value="SQL">SQL</option>
+        <option value="Airflow">Airflow</option>
+        <option value="Cloud">Cloud</option>
+      </select>
+      <select data-year>
+        <option value="all">Alle jaren</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+    </div>
     <div class="grid grid-3" data-results>
       {projects.map((project) => (
         <article
           class="card"
           data-project
-          data-title={project.title}
+          data-title={`${project.title.en} ${project.title.fr} ${project.title.nl}`}
           data-themes={project.themes.join(",")}
           data-tools={project.tools.join(",")}
           data-year={project.year}
         >
           <span class="badge">{project.year}</span>
-          <h3>{project.title}</h3>
-          <p class="muted">{project.summary}</p>
+          <h3>
+            <span class="lang-inline is-active" data-lang="en">{project.title.en}</span>
+            <span class="lang-inline" data-lang="fr">{project.title.fr}</span>
+            <span class="lang-inline" data-lang="nl">{project.title.nl}</span>
+          </h3>
+          <p class="muted">
+            <span class="lang-inline is-active" data-lang="en">{project.summary.en}</span>
+            <span class="lang-inline" data-lang="fr">{project.summary.fr}</span>
+            <span class="lang-inline" data-lang="nl">{project.summary.nl}</span>
+          </p>
           <div class="tags">
             {project.themes.map((theme) => (
-              <span class="tag">{theme}</span>
+              <span class="tag">
+                <span class="lang-inline is-active" data-lang="en">{theme}</span>
+                <span class="lang-inline" data-lang="fr">{themeLabels[theme]?.fr || theme}</span>
+                <span class="lang-inline" data-lang="nl">{themeLabels[theme]?.nl || theme}</span>
+              </span>
             ))}
           </div>
         </article>
@@ -60,16 +141,19 @@ const { projects } = Astro.props;
 
 <script is:inline>
   const cards = Array.from(document.querySelectorAll("[data-project]"));
-  const search = document.querySelector("[data-search]");
-  const theme = document.querySelector("[data-theme]");
-  const tool = document.querySelector("[data-tool]");
-  const year = document.querySelector("[data-year]");
+  const getActiveControl = (selector) =>
+    document.querySelector(`[data-lang].is-active ${selector}`) ||
+    document.querySelector(selector);
 
   const applyFilters = () => {
-    const query = search.value.toLowerCase();
-    const themeValue = theme.value;
-    const toolValue = tool.value;
-    const yearValue = year.value;
+    const search = getActiveControl("[data-search]");
+    const theme = getActiveControl("[data-theme]");
+    const tool = getActiveControl("[data-tool]");
+    const year = getActiveControl("[data-year]");
+    const query = search?.value.toLowerCase() ?? "";
+    const themeValue = theme?.value ?? "all";
+    const toolValue = tool?.value ?? "all";
+    const yearValue = year?.value ?? "all";
 
     cards.forEach((card) => {
       const title = card.dataset.title.toLowerCase();
@@ -87,7 +171,6 @@ const { projects } = Astro.props;
     });
   };
 
-  [search, theme, tool, year].forEach((control) =>
-    control.addEventListener("input", applyFilters)
-  );
+  const controls = document.querySelectorAll("[data-search], [data-theme], [data-tool], [data-year]");
+  controls.forEach((control) => control.addEventListener("input", applyFilters));
 </script>

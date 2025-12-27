@@ -1,17 +1,43 @@
 ---
 const { items } = Astro.props;
+const languages = ["en", "fr", "nl"];
+const getLangValue = (value, lang) => {
+  if (typeof value === "string") {
+    return value;
+  }
+  return value?.[lang] ?? "";
+};
+const getLangArray = (value, lang) => {
+  if (Array.isArray(value)) {
+    return value;
+  }
+  return value?.[lang] ?? [];
+};
 ---
 <div class="timeline">
   {items.map((item) => (
     <div class="timeline-item">
-      <h3>{item.role || item.degree}</h3>
+      <h3>
+        {languages.map((lang, index) => (
+          <span
+            class={`lang-inline${index === 0 ? " is-active" : ""}`}
+            data-lang={lang}
+          >
+            {getLangValue(item.role || item.degree, lang)}
+          </span>
+        ))}
+      </h3>
       <p class="muted">{item.org} · {item.dates}</p>
       {item.details && (
-        <ul class="list">
-          {item.details.map((detail) => (
-            <li>{detail}</li>
+        <>
+          {languages.map((lang, index) => (
+            <ul class={`list${index === 0 ? " is-active" : ""}`} data-lang={lang}>
+              {getLangArray(item.details, lang).map((detail) => (
+                <li>{detail}</li>
+              ))}
+            </ul>
           ))}
-        </ul>
+        </>
       )}
     </div>
   ))}

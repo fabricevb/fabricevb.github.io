@@ -4,17 +4,47 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="Photography" description="Personal photography gallery.">
   <section class="section container">
     <div class="section-title">
-      <h2>Photography</h2>
-      <span class="badge">Gallery</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Photography</span>
+        <span class="lang-inline" data-lang="fr">Photographie</span>
+        <span class="lang-inline" data-lang="nl">Fotografie</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Gallery</span>
+        <span class="lang-inline" data-lang="fr">Galerie</span>
+        <span class="lang-inline" data-lang="nl">Galerij</span>
+      </span>
     </div>
     <p class="tagline">
-      A lightweight gallery will live here soon. For now, reach out if you’d like to see recent
-      photography work.
+      <span class="lang-inline is-active" data-lang="en">
+        A curated gallery will live here soon. Share your upcoming selections and I’ll add them
+        below the cards.
+      </span>
+      <span class="lang-inline" data-lang="fr">
+        Une galerie sélectionnée sera bientôt disponible. Partagez vos prochaines photos et je les
+        ajouterai sous les cartes.
+      </span>
+      <span class="lang-inline" data-lang="nl">
+        Hier komt binnenkort een geselecteerde galerij. Deel je volgende foto’s en ik voeg ze onder
+        de kaarten toe.
+      </span>
     </p>
     <div class="grid grid-3">
-      <div class="card">Placeholder image slot</div>
-      <div class="card">Placeholder image slot</div>
-      <div class="card">Placeholder image slot</div>
+      <div class="card">
+        <span class="lang-inline is-active" data-lang="en">Placeholder image slot</span>
+        <span class="lang-inline" data-lang="fr">Emplacement d’image</span>
+        <span class="lang-inline" data-lang="nl">Plek voor afbeelding</span>
+      </div>
+      <div class="card">
+        <span class="lang-inline is-active" data-lang="en">Placeholder image slot</span>
+        <span class="lang-inline" data-lang="fr">Emplacement d’image</span>
+        <span class="lang-inline" data-lang="nl">Plek voor afbeelding</span>
+      </div>
+      <div class="card">
+        <span class="lang-inline is-active" data-lang="en">Placeholder image slot</span>
+        <span class="lang-inline" data-lang="fr">Emplacement d’image</span>
+        <span class="lang-inline" data-lang="nl">Plek voor afbeelding</span>
+      </div>
     </div>
   </section>
 </BaseLayout>

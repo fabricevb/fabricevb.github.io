@@ -6,12 +6,30 @@ import ProjectFilter from "../components/ProjectFilter.astro";
 <BaseLayout title="Portfolio" description="Interactive portfolio of analytics, NLP, and automation projects.">
   <section class="section container">
     <div class="section-title">
-      <h2>Portfolio</h2>
-      <span class="badge">Interactive filtering</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Portfolio</span>
+        <span class="lang-inline" data-lang="fr">Portfolio</span>
+        <span class="lang-inline" data-lang="nl">Portfolio</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Interactive filtering</span>
+        <span class="lang-inline" data-lang="fr">Filtrage interactif</span>
+        <span class="lang-inline" data-lang="nl">Interactief filteren</span>
+      </span>
     </div>
     <p class="tagline">
-      Explore a curated set of data science, econometrics, and legal-tech projects. Filter by theme,
-      tools, or year to see the work most relevant to your needs.
+      <span class="lang-inline is-active" data-lang="en">
+        Explore a curated set of data science, Artificial Intelligence, econometrics, and legal-tech
+        projects. Filter by theme, tools, or year to see the work most relevant to your needs.
+      </span>
+      <span class="lang-inline" data-lang="fr">
+        Explorez une sélection de projets en data science, Artificial Intelligence, économétrie et
+        legal-tech. Filtrez par thème, outils ou année pour voir les travaux les plus pertinents.
+      </span>
+      <span class="lang-inline" data-lang="nl">
+        Ontdek een selectie van data science-, Artificial Intelligence-, econometrie- en legal-tech
+        projecten. Filter op thema, tools of jaar om de meest relevante cases te bekijken.
+      </span>
     </p>
   </section>
   <ProjectFilter projects={projects} />
