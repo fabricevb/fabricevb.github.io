@@ -4,37 +4,41 @@
     "org": "Court of Justice of the European Union – Innovation Lab",
     "dates": "2024 – Present",
     "details": [
-      "Lead NLP and AI-driven solutions for text classification, NER, summarization, and decision support.",
-      "Drive data governance and deployment into the broader IT landscape.",
-      "Partner with legal and technical stakeholders to embed AI responsibly."
+      "Design and deploy NLP models for classification, entity extraction, summarisation, and semantic analysis of legal texts.",
+      "Build data pipelines for ingestion, preprocessing, and storage of multilingual judicial data.",
+      "Collaborate with legal experts, linguists, and IT teams to align AI tools with institutional and regulatory requirements.",
+      "Promote governance, transparency, and AI ethics in public-sector deployments."
     ]
   },
   {
-    "role": "Senior Statistician / Econometrician",
-    "org": "CDC Cartel Damage Claims Consulting",
-    "dates": "2020 – 2022",
+    "role": "Reserve Navy Officer – Advisor in Data Science",
+    "org": "Belgian Defence",
+    "dates": "2023 – Present",
     "details": [
-      "Built automated pipelines for econometric models and litigation analytics.",
-      "Developed interactive dashboards and reproducible reporting.",
-      "Worked with Python, R, SQL, Airflow, Git; cloud on AWS and Azure."
+      "Provide analytics advice and build data-driven tools to support naval planning and situational awareness.",
+      "Contribute to data innovation initiatives, including the 2024 Navy Hackathon.",
+      "Fulfil training, protocol, and representation duties alongside technical responsibilities."
     ]
   },
   {
-    "role": "Statistician / Econometrician",
+    "role": "(Senior) Statistician / Econometrician",
     "org": "CDC Cartel Damage Claims Consulting",
-    "dates": "2019 – 2020",
+    "dates": "2019 – 2024",
     "details": [
-      "Delivered econometric modelling and data analysis for competition law cases.",
-      "Automated data ingestion for Eurostat, ECB, and IMF datasets."
+      "Led data collection and econometric analysis for EU-wide competition litigation cases.",
+      "Built automated pipelines in Python, R, SQL, Airflow, and Git for process control and reporting.",
+      "Delivered damage assessments and dashboards for legal and economic experts across jurisdictions.",
+      "Managed large document and dataset submissions to courts with strict compliance requirements."
     ]
   },
   {
     "role": "Research Intern",
-    "org": "National Bank of Belgium",
-    "dates": "2018",
+    "org": "National Bank of Belgium – Research & Development",
+    "dates": "2018 – 2019",
     "details": [
-      "Researched the predictive power of the Belgian Business Survey.",
-      "Built statistical models for macroeconomic forecasting."
+      "Evaluated the predictive power of the Belgian Business Survey for GDP growth using time series models.",
+      "Developed indicators to measure response variability in business panel surveys.",
+      "Maintained and updated internal economic databases for research and policy monitoring."
     ]
   }
 ]
