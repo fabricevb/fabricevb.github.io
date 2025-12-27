@@ -1,57 +1,72 @@
 [
   {
     "title": {
-      "en": "Automating damages analysis with reproducible pipelines",
-      "fr": "Automatiser l’analyse des dommages avec des pipelines reproductibles",
-      "nl": "Schadeanalyse automatiseren met reproduceerbare pipelines"
+      "en": "Decoding Transaction Data in Private Competition Law Damage Litigations: Efficient data management in legal proceedings",
+      "fr": "Décoder les données transactionnelles dans les litiges en dommages de concurrence : gestion efficace des données",
+      "nl": "Transactiegegevens in mededingingsschadezaken: efficiënte databeheer in juridische procedures"
     },
-    "source": "CDC Cartel Damage Claims Blog",
-    "date": "Dec 2023",
-    "link": "https://www.carteldamageclaims.com/",
+    "source": "CDC Cartel Damage Claims Consulting",
+    "date": "2023",
+    "link": "#",
     "type": {
-      "en": "Blog",
-      "fr": "Blog",
-      "nl": "Blog"
+      "en": "Publication",
+      "fr": "Publication",
+      "nl": "Publicatie"
     }
   },
   {
     "title": {
-      "en": "Competition damages: bringing data teams closer to legal strategy",
-      "fr": "Dommages de concurrence : rapprocher les équipes data de la stratégie juridique",
-      "nl": "Mededingingsschade: datateams dichter bij de juridische strategie brengen"
+      "en": "General Court entirely dismisses Scania’s appeal and confirms Scania’s participation in the Truck Cartel",
+      "fr": "Le Tribunal rejette intégralement l’appel de Scania et confirme sa participation au cartel des camions",
+      "nl": "Gerecht verwerpt het beroep van Scania en bevestigt deelname aan het truckkartel"
     },
-    "source": "Lexology",
-    "date": "Jun 2023",
-    "link": "https://www.lexology.com/",
+    "source": "CDC Cartel Damage Claims Consulting",
+    "date": "2022",
+    "link": "#",
     "type": {
-      "en": "Article",
-      "fr": "Article",
-      "nl": "Artikel"
+      "en": "Publication",
+      "fr": "Publication",
+      "nl": "Publicatie"
     }
   },
   {
     "title": {
-      "en": "Efficient evidence in cartel damages cases",
-      "fr": "Preuves efficaces dans les affaires de dommages liés aux cartels",
-      "nl": "Efficiënt bewijs in kartelschadezaken"
+      "en": "The Economic Approach and the Need for Legal Certainty in Competition Damage Claims",
+      "fr": "L’approche économique et la nécessité de sécurité juridique dans les actions en dommages de concurrence",
+      "nl": "De economische aanpak en de nood aan rechtszekerheid bij mededingingsschade"
     },
-    "source": "Lexology",
-    "date": "Feb 2022",
-    "link": "https://www.lexology.com/",
+    "source": "LL.M Dissertation",
+    "date": "2021",
+    "link": "#",
     "type": {
-      "en": "Article",
-      "fr": "Article",
-      "nl": "Artikel"
+      "en": "Thesis",
+      "fr": "Mémoire",
+      "nl": "Scriptie"
     }
   },
   {
     "title": {
-      "en": "Predictive power of the Belgian Business Survey",
-      "fr": "Pouvoir prédictif de la Belgian Business Survey",
-      "nl": "Voorspellende kracht van de Belgian Business Survey"
+      "en": "What can the variability and volatility of opinions (from the Belgian business survey) reveal?",
+      "fr": "Que révèlent la variabilité et la volatilité des opinions (enquête des entreprises belges) ?",
+      "nl": "Wat onthullen variabiliteit en volatiliteit van meningen (Belgische bedrijfsenquête)?"
+    },
+    "source": "Central Bank Business Surveys (CBBS) Conference",
+    "date": "2019",
+    "link": "#",
+    "type": {
+      "en": "Conference",
+      "fr": "Conférence",
+      "nl": "Conferentie"
+    }
+  },
+  {
+    "title": {
+      "en": "The Variability of the Belgian Business Survey Indicator - Analysis and Predictive Power",
+      "fr": "La variabilité du Belgian Business Survey Indicator - analyse et pouvoir prédictif",
+      "nl": "De variabiliteit van de Belgian Business Survey Indicator - analyse en voorspellend vermogen"
     },
     "source": "Master Thesis, KU Leuven",
-    "date": "Sep 2019",
+    "date": "2019",
     "link": "#",
     "type": {
       "en": "Thesis",
