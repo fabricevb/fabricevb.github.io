@@ -28,7 +28,12 @@
         "Betere traceerbaarheid en governance over alle inzendingen."
       ]
     },
-    "stack": "Python, spaCy, SQL, Airflow, Git"
+    "stack": "Python, spaCy, SQL, Airflow, Git",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   },
   {
     "id": "case-law-text-classification",
@@ -59,7 +64,12 @@
         "Herbruikbare NLP-pijplijnen voor nieuwe domeinen mogelijk gemaakt."
       ]
     },
-    "stack": "Python, scikit-learn, spaCy, MLflow"
+    "stack": "Python, scikit-learn, spaCy, MLflow",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   },
   {
     "id": "damages-quantification-model",
@@ -90,7 +100,12 @@
         "Modelvalidatie gestroomlijnd over meerdere datasets."
       ]
     },
-    "stack": "R, Python, STATA"
+    "stack": "R, Python, STATA",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   },
   {
     "id": "end-to-end-data-automation",
@@ -121,7 +136,12 @@
         "Handmatige QA-tijd verkort met geautomatiseerde controles."
       ]
     },
-    "stack": "Python, Airflow, SQL, Git"
+    "stack": "Python, Airflow, SQL, Git",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   },
   {
     "id": "public-data-processing",
@@ -152,7 +172,12 @@
         "Betere dataconsistentie in klantrapporten."
       ]
     },
-    "stack": "Python, R, SQL"
+    "stack": "Python, R, SQL",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   },
   {
     "id": "interactive-dashboards",
@@ -183,7 +208,12 @@
         "KPI-rapportering gestandaardiseerd over opdrachten heen."
       ]
     },
-    "stack": "R Shiny, Streamlit, PowerBI"
+    "stack": "R Shiny, Streamlit, PowerBI",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   },
   {
     "id": "litigation-risk-analysis",
@@ -214,6 +244,11 @@
         "Narratieve rapportage versterkt met NLP-bewijs."
       ]
     },
-    "stack": "Python, SQL, NLP"
+    "stack": "Python, SQL, NLP",
+    "links": {
+      "github": "https://github.com/fabricevb",
+      "demo": "/case-studies",
+      "article": "/publications"
+    }
   }
 ]
