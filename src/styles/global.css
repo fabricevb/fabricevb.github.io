@@ -330,6 +330,20 @@ summary {
   background: var(--bg-secondary);
 }
 
+.visual-card {
+  min-height: 180px;
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 30%, transparent), var(--card));
+  display: grid;
+  gap: 0.6rem;
+  align-content: center;
+}
+
+.visual-card .muted {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -347,4 +361,16 @@ summary {
 
 [data-lang].is-active {
   display: block;
+}
+
+.lang-inline[data-lang] {
+  display: none;
+}
+
+.lang-inline[data-lang].is-active {
+  display: inline;
+}
+
+.filter-bar[data-lang].is-active {
+  display: flex;
 }

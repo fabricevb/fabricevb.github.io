@@ -1,40 +1,100 @@
 [
   {
-    "role": "Data Scientist (Administrateur)",
+    "role": {
+      "en": "Data Scientist (Administrator)",
+      "fr": "Data Scientist (Administrateur)",
+      "nl": "Data Scientist (Administrateur)"
+    },
     "org": "Court of Justice of the European Union – Innovation Lab",
     "dates": "2024 – Present",
-    "details": [
-      "Lead NLP and AI-driven solutions for text classification, NER, summarization, and decision support.",
-      "Drive data governance and deployment into the broader IT landscape.",
-      "Partner with legal and technical stakeholders to embed AI responsibly."
-    ]
+    "details": {
+      "en": [
+        "Lead NLP and Artificial Intelligence solutions for text classification, NER, summarization, and decision support.",
+        "Drive data governance and deployment into the broader IT landscape.",
+        "Partner with legal and technical stakeholders to embed AI responsibly."
+      ],
+      "fr": [
+        "Pilotage de solutions NLP et d’Artificial Intelligence pour la classification de textes, la NER, le résumé et l’aide à la décision.",
+        "Mise en place de la gouvernance des données et du déploiement dans l’écosystème IT.",
+        "Collaboration avec les parties prenantes juridiques et techniques pour un usage responsable de l’IA."
+      ],
+      "nl": [
+        "Leiden van NLP- en Artificial Intelligence-oplossingen voor tekstclassificatie, NER, samenvatting en beslissingsondersteuning.",
+        "Datagovernance en uitrol in het bredere IT-landschap.",
+        "Samenwerking met juridische en technische stakeholders voor verantwoorde AI."
+      ]
+    }
   },
   {
-    "role": "Senior Statistician / Econometrician",
+    "role": {
+      "en": "Senior Statistician / Econometrician",
+      "fr": "Senior statisticien / économétricien",
+      "nl": "Senior statisticus / econometrist"
+    },
     "org": "CDC Cartel Damage Claims Consulting",
     "dates": "2020 – 2022",
-    "details": [
-      "Built automated pipelines for econometric models and litigation analytics.",
-      "Developed interactive dashboards and reproducible reporting.",
-      "Worked with Python, R, SQL, Airflow, Git; cloud on AWS and Azure."
-    ]
+    "details": {
+      "en": [
+        "Built automated pipelines for econometric models and litigation analytics.",
+        "Developed interactive dashboards and reproducible reporting.",
+        "Worked with Python, R, SQL, Airflow, Git; cloud on AWS and Azure."
+      ],
+      "fr": [
+        "Conception de pipelines automatisés pour les modèles économétriques et l’analytics contentieux.",
+        "Développement de dashboards interactifs et de reporting reproductible.",
+        "Outils : Python, R, SQL, Airflow, Git ; cloud AWS et Azure."
+      ],
+      "nl": [
+        "Geautomatiseerde pijplijnen gebouwd voor econometrische modellen en litigation analytics.",
+        "Interactieve dashboards en reproduceerbare rapportage ontwikkeld.",
+        "Tooling: Python, R, SQL, Airflow, Git; cloud op AWS en Azure."
+      ]
+    }
   },
   {
-    "role": "Statistician / Econometrician",
+    "role": {
+      "en": "Statistician / Econometrician",
+      "fr": "Statisticien / économétricien",
+      "nl": "Statisticus / econometrist"
+    },
     "org": "CDC Cartel Damage Claims Consulting",
     "dates": "2019 – 2020",
-    "details": [
-      "Delivered econometric modelling and data analysis for competition law cases.",
-      "Automated data ingestion for Eurostat, ECB, and IMF datasets."
-    ]
+    "details": {
+      "en": [
+        "Delivered econometric modelling and data analysis for competition law cases.",
+        "Automated data ingestion for Eurostat, ECB, and IMF datasets."
+      ],
+      "fr": [
+        "Modélisation économétrique et analyses de données pour des affaires de droit de la concurrence.",
+        "Automatisation de l’ingestion des données Eurostat, BCE et FMI."
+      ],
+      "nl": [
+        "Econometrische modellering en data-analyse voor mededingingszaken geleverd.",
+        "Automatisering van data-inname voor Eurostat-, ECB- en IMF-datasets."
+      ]
+    }
   },
   {
-    "role": "Research Intern",
+    "role": {
+      "en": "Research Intern",
+      "fr": "Stagiaire de recherche",
+      "nl": "Onderzoeksstagiair"
+    },
     "org": "National Bank of Belgium",
     "dates": "2018",
-    "details": [
-      "Researched the predictive power of the Belgian Business Survey.",
-      "Built statistical models for macroeconomic forecasting."
-    ]
+    "details": {
+      "en": [
+        "Researched the predictive power of the Belgian Business Survey.",
+        "Built statistical models for macroeconomic forecasting."
+      ],
+      "fr": [
+        "Étude du pouvoir prédictif de la Belgian Business Survey.",
+        "Construction de modèles statistiques pour la prévision macroéconomique."
+      ],
+      "nl": [
+        "Onderzoek naar de voorspellende kracht van de Belgian Business Survey.",
+        "Statistische modellen gebouwd voor macro-economische voorspelling."
+      ]
+    }
   }
 ]

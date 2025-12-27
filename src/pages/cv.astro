@@ -8,35 +8,77 @@ import Timeline from "../components/Timeline.astro";
 <BaseLayout title="CV" description="Downloadable CV and professional timeline.">
   <section class="section container">
     <div class="section-title">
-      <h2>Curriculum Vitae</h2>
-      <a class="button primary" href="mailto:fabrice@example.com?subject=CV%20request">Request PDF</a>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Curriculum Vitae</span>
+        <span class="lang-inline" data-lang="fr">Curriculum Vitae</span>
+        <span class="lang-inline" data-lang="nl">Curriculum Vitae</span>
+      </h2>
+      <a class="button primary" href="https://www.linkedin.com/in/fabricevb/" target="_blank" rel="noreferrer">
+        <span class="lang-inline is-active" data-lang="en">Request PDF via LinkedIn</span>
+        <span class="lang-inline" data-lang="fr">Demander le PDF via LinkedIn</span>
+        <span class="lang-inline" data-lang="nl">Vraag de PDF via LinkedIn</span>
+      </a>
     </div>
     <p class="tagline">
-      Prefer a short version? The timeline below summarizes roles, education, and certifications.
-      For the full PDF, request a copy via email.
+      <span class="lang-inline is-active" data-lang="en">
+        Prefer a short version? The timeline below summarizes roles, education, and certifications.
+        Reach out on LinkedIn for the full PDF.
+      </span>
+      <span class="lang-inline" data-lang="fr">
+        Vous préférez une version courte ? La chronologie ci-dessous résume les postes, la formation
+        et les certifications. Contactez-moi sur LinkedIn pour le PDF complet.
+      </span>
+      <span class="lang-inline" data-lang="nl">
+        Liever een korte versie? De tijdlijn hieronder vat functies, opleiding en certificeringen
+        samen. Neem contact op via LinkedIn voor de volledige PDF.
+      </span>
     </p>
   </section>
 
   <section class="section container">
     <div class="section-title">
-      <h2>Experience</h2>
-      <span class="badge">Timeline</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Experience</span>
+        <span class="lang-inline" data-lang="fr">Expérience</span>
+        <span class="lang-inline" data-lang="nl">Ervaring</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Timeline</span>
+        <span class="lang-inline" data-lang="fr">Chronologie</span>
+        <span class="lang-inline" data-lang="nl">Tijdlijn</span>
+      </span>
     </div>
     <Timeline items={experience} />
   </section>
 
   <section class="section container">
     <div class="section-title">
-      <h2>Education</h2>
-      <span class="badge">Degrees</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Education</span>
+        <span class="lang-inline" data-lang="fr">Formation</span>
+        <span class="lang-inline" data-lang="nl">Opleiding</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Degrees</span>
+        <span class="lang-inline" data-lang="fr">Diplômes</span>
+        <span class="lang-inline" data-lang="nl">Diploma’s</span>
+      </span>
     </div>
     <Timeline items={education} />
   </section>
 
   <section class="section container">
     <div class="section-title">
-      <h2>Certifications</h2>
-      <span class="badge">Credentials</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Certifications</span>
+        <span class="lang-inline" data-lang="fr">Certifications</span>
+        <span class="lang-inline" data-lang="nl">Certificeringen</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Credentials</span>
+        <span class="lang-inline" data-lang="fr">Accréditations</span>
+        <span class="lang-inline" data-lang="nl">Bewijzen</span>
+      </span>
     </div>
     <ul class="list">
       {certifications.map((item) => (
@@ -47,13 +89,33 @@ import Timeline from "../components/Timeline.astro";
 
   <section class="section container">
     <div class="section-title">
-      <h2>Languages</h2>
-      <span class="badge">Communication</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Languages</span>
+        <span class="lang-inline" data-lang="fr">Langues</span>
+        <span class="lang-inline" data-lang="nl">Talen</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Communication</span>
+        <span class="lang-inline" data-lang="fr">Communication</span>
+        <span class="lang-inline" data-lang="nl">Communicatie</span>
+      </span>
     </div>
     <div class="tags">
-      <span class="tag">French (native)</span>
-      <span class="tag">English (fluent)</span>
-      <span class="tag">Dutch (fluent)</span>
+      <span class="tag">
+        <span class="lang-inline is-active" data-lang="en">French (native)</span>
+        <span class="lang-inline" data-lang="fr">Français (natif)</span>
+        <span class="lang-inline" data-lang="nl">Frans (moedertaal)</span>
+      </span>
+      <span class="tag">
+        <span class="lang-inline is-active" data-lang="en">English (fluent)</span>
+        <span class="lang-inline" data-lang="fr">Anglais (courant)</span>
+        <span class="lang-inline" data-lang="nl">Engels (vloeiend)</span>
+      </span>
+      <span class="tag">
+        <span class="lang-inline is-active" data-lang="en">Dutch (fluent)</span>
+        <span class="lang-inline" data-lang="fr">Néerlandais (courant)</span>
+        <span class="lang-inline" data-lang="nl">Nederlands (vloeiend)</span>
+      </span>
     </div>
   </section>
 </BaseLayout>
