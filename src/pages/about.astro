@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import experience from "../../content/experience.json";
+import education from "../../content/education.json";
+import Timeline from "../components/Timeline.astro";
+---
+<BaseLayout title="About" description="Narrative, values, and experience timeline.">
+  <section class="section container">
+    <div class="section-title">
+      <h2>About</h2>
+      <span class="badge">Narrative + values</span>
+    </div>
+    <div data-lang="en" class="is-active">
+      <p class="tagline">
+        I sit at the intersection of data science, economics, and legal context. My work focuses on
+        building trustworthy pipelines—NLP models, econometric analysis, and automation—that make
+        complex evidence easier to act on.
+      </p>
+      <ul class="list">
+        <li>Bias-aware, transparent modelling for legal and policy stakeholders.</li>
+        <li>Automation-first delivery with human oversight.</li>
+        <li>Clear documentation and reproducible results.</li>
+      </ul>
+    </div>
+    <div data-lang="fr">
+      <p class="tagline">
+        J’opère à l’interface entre data science, économie et contexte juridique. Mon travail porte
+        sur des pipelines fiables — NLP, analyses économétriques et automatisation — pour rendre les
+        preuves complexes plus actionnables.
+      </p>
+      <ul class="list">
+        <li>Modèles transparents et maîtrisés pour les parties prenantes juridiques.</li>
+        <li>Automatisation pragmatique avec supervision humaine.</li>
+        <li>Documentation claire et résultats reproductibles.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-title">
+      <h2>Experience</h2>
+      <span class="badge">Timeline</span>
+    </div>
+    <Timeline items={experience} />
+  </section>
+
+  <section class="section container">
+    <div class="section-title">
+      <h2>Education</h2>
+      <span class="badge">Academic path</span>
+    </div>
+    <Timeline items={education} />
+  </section>
+</BaseLayout>

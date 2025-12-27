@@ -1,0 +1,26 @@
+[
+  {
+    "id": "automated-document-intake",
+    "title": "Automated document intake for court workflows",
+    "problem": "Court teams needed to process growing volumes of multilingual submissions with limited time for manual checks.",
+    "approach": "Designed an NLP-driven intake pipeline with automated validation, metadata enrichment, and routing rules.",
+    "impact": "Shortened review cycles and improved traceability in the governance process without compromising quality.",
+    "stack": "Python, spaCy, SQL, Airflow, Git"
+  },
+  {
+    "id": "damages-modelling",
+    "title": "Damages quantification for competition cases",
+    "problem": "Legal teams required defensible damages estimates across multiple client datasets.",
+    "approach": "Built econometric models with transparent assumptions, automated data prep, and reusable reporting templates.",
+    "impact": "Delivered consistent, audit-ready outputs that supported expert reports and decision-making.",
+    "stack": "R, Python, STATA, SQL"
+  },
+  {
+    "id": "automation-dashboards",
+    "title": "Automation + dashboards for recurring analytics",
+    "problem": "Analysts were spending significant time refreshing datasets and rebuilding visuals.",
+    "approach": "Orchestrated data pipelines in Airflow and surfaced metrics through Shiny/Streamlit dashboards.",
+    "impact": "Improved turnaround times and made insights accessible to non-technical stakeholders.",
+    "stack": "Python, Airflow, R Shiny, Streamlit"
+  }
+]

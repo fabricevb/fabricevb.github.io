@@ -1,0 +1,93 @@
+---
+const { projects } = Astro.props;
+---
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Project finder</h2>
+      <span class="badge">Filter + search</span>
+    </div>
+    <div class="filter-bar">
+      <input type="search" placeholder="Search projects" aria-label="Search projects" data-search />
+      <select data-theme>
+        <option value="all">All themes</option>
+        <option value="NLP">NLP</option>
+        <option value="automation">Automation</option>
+        <option value="dashboards">Dashboards</option>
+        <option value="econometrics">Econometrics</option>
+        <option value="legal-tech">Legal-tech</option>
+      </select>
+      <select data-tool>
+        <option value="all">All tools</option>
+        <option value="Python">Python</option>
+        <option value="R">R</option>
+        <option value="SQL">SQL</option>
+        <option value="Airflow">Airflow</option>
+        <option value="Cloud">Cloud</option>
+      </select>
+      <select data-year>
+        <option value="all">All years</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+    </div>
+    <div class="grid grid-3" data-results>
+      {projects.map((project) => (
+        <article
+          class="card"
+          data-project
+          data-title={project.title}
+          data-themes={project.themes.join(",")}
+          data-tools={project.tools.join(",")}
+          data-year={project.year}
+        >
+          <span class="badge">{project.year}</span>
+          <h3>{project.title}</h3>
+          <p class="muted">{project.summary}</p>
+          <div class="tags">
+            {project.themes.map((theme) => (
+              <span class="tag">{theme}</span>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  const cards = Array.from(document.querySelectorAll("[data-project]"));
+  const search = document.querySelector("[data-search]");
+  const theme = document.querySelector("[data-theme]");
+  const tool = document.querySelector("[data-tool]");
+  const year = document.querySelector("[data-year]");
+
+  const applyFilters = () => {
+    const query = search.value.toLowerCase();
+    const themeValue = theme.value;
+    const toolValue = tool.value;
+    const yearValue = year.value;
+
+    cards.forEach((card) => {
+      const title = card.dataset.title.toLowerCase();
+      const themes = card.dataset.themes.split(",");
+      const tools = card.dataset.tools.split(",");
+      const matchesSearch = title.includes(query);
+      const matchesTheme = themeValue === "all" || themes.includes(themeValue);
+      const matchesTool =
+        toolValue === "all" ||
+        tools.includes(toolValue) ||
+        (toolValue === "Cloud" && tools.some((t) => t.includes("AWS") || t.includes("Azure")));
+      const matchesYear = yearValue === "all" || card.dataset.year === yearValue;
+
+      card.style.display = matchesSearch && matchesTheme && matchesTool && matchesYear ? "block" : "none";
+    });
+  };
+
+  [search, theme, tool, year].forEach((control) =>
+    control.addEventListener("input", applyFilters)
+  );
+</script>

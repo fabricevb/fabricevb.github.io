@@ -1,0 +1,40 @@
+[
+  {
+    "role": "Data Scientist (Administrateur)",
+    "org": "Court of Justice of the European Union – Innovation Lab",
+    "dates": "2022 – Present",
+    "details": [
+      "Lead NLP and AI-driven solutions for text classification, NER, summarization, and decision support.",
+      "Drive data governance and deployment into the broader IT landscape.",
+      "Partner with legal and technical stakeholders to embed AI responsibly."
+    ]
+  },
+  {
+    "role": "Senior Statistician / Econometrician",
+    "org": "CDC Cartel Damage Claims Consulting",
+    "dates": "2020 – 2022",
+    "details": [
+      "Built automated pipelines for econometric models and litigation analytics.",
+      "Developed interactive dashboards and reproducible reporting.",
+      "Worked with Python, R, SQL, Airflow, Git; cloud on AWS and Azure."
+    ]
+  },
+  {
+    "role": "Statistician / Econometrician",
+    "org": "CDC Cartel Damage Claims Consulting",
+    "dates": "2019 – 2020",
+    "details": [
+      "Delivered econometric modelling and data analysis for competition law cases.",
+      "Automated data ingestion for Eurostat, ECB, and IMF datasets."
+    ]
+  },
+  {
+    "role": "Research Intern",
+    "org": "National Bank of Belgium",
+    "dates": "2018",
+    "details": [
+      "Researched the predictive power of the Belgian Business Survey.",
+      "Built statistical models for macroeconomic forecasting."
+    ]
+  }
+]

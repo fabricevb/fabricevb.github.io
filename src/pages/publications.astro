@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import publications from "../../content/publications.json";
+---
+<BaseLayout title="Publications" description="Articles, blog posts, and academic work.">
+  <section class="section container">
+    <div class="section-title">
+      <h2>Publications</h2>
+      <span class="badge">Searchable list</span>
+    </div>
+    <div class="filter-bar">
+      <input type="search" placeholder="Search publications" aria-label="Search publications" data-pub-search />
+    </div>
+    <div class="grid" data-pub-results>
+      {publications.map((publication) => (
+        <article class="card" data-publication data-title={publication.title}>
+          <span class="badge">{publication.type}</span>
+          <h3>{publication.title}</h3>
+          <p class="muted">{publication.source} · {publication.date}</p>
+          <a class="button" href={publication.link} target="_blank" rel="noreferrer">Read</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <script is:inline>
+    const pubCards = Array.from(document.querySelectorAll("[data-publication]"));
+    const pubSearch = document.querySelector("[data-pub-search]");
+
+    pubSearch?.addEventListener("input", () => {
+      const query = pubSearch.value.toLowerCase();
+      pubCards.forEach((card) => {
+        const title = card.dataset.title.toLowerCase();
+        card.style.display = title.includes(query) ? "block" : "none";
+      });
+    });
+  </script>
+</BaseLayout>
