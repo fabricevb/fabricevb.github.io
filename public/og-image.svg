@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#102a43" />
+  <text x="80" y="260" font-family="Inter, Arial, sans-serif" font-size="64" fill="#ffffff">
+    Fabrice Van Boeckel
+  </text>
+  <text x="80" y="340" font-family="Inter, Arial, sans-serif" font-size="36" fill="#cbd5e1">
+    Data Scientist · NLP · Legal-tech
+  </text>
+</svg>

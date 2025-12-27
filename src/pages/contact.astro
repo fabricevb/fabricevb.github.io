@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Contact" description="Get in touch for collaborations or speaking. ">
+  <section class="section container">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <span class="badge">Open to collaboration</span>
+    </div>
+    <p class="tagline">
+      Use the form below or email me directly. I respond quickly for research, consulting, and
+      speaking opportunities.
+    </p>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+      <form class="card" action="https://formspree.io/f/your-id" method="POST">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button primary" type="submit">Send message</button>
+        <p class="muted" style="font-size: 0.85rem;">
+          Update the Formspree ID or use a mailto fallback if preferred.
+        </p>
+      </form>
+      <div class="card">
+        <h3>Direct channels</h3>
+        <ul class="list">
+          <li><strong>Email:</strong> fabrice@example.com</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com">linkedin.com</a></li>
+          <li><strong>Location:</strong> Luxembourg / Brussels</li>
+        </ul>
+        <p class="muted">
+          Interested in data governance, NLP, or legal-tech modernization? Let’s discuss scope and
+          outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

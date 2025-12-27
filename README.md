@@ -1,120 +1,68 @@
+# Fabrice Van Boeckel — Personal Hub
 
-**Statistician / Data Enthusiast**  
-Luxembourg and Belgium  
-✉️ [fabricevb@hotmail.com](mailto:fabricevb@hotmail.com)  
-🐙 [github.com/fabricevb](https://github.com/fabricevb)  
-💼 [LinkedIn](https://www.linkedin.com/in/fabricevb/)
+A static Astro site for Fabrice Van Boeckel’s portfolio, publications, and CV. Built for GitHub Pages.
 
----
+## Quick start
 
-## Not much here yet. 
-## Will add more in the near future
-## For the moment, find my CV below 
+```bash
+npm install
+npm run dev
+```
 
+## Build & preview
 
-## Who Am I?
+```bash
+npm run build
+npm run preview
+```
 
-Dynamic and results-oriented data scientist and statistician with a proven track record of delivering high-quality projects and solutions. I possess a deep understanding of legal, economic, and data aspects in complex litigation. My expertise in data and programming languages enables me to turn data into action. Passionate about innovation and problem-solving, I am always seeking new challenges and opportunities.
+## Add content
 
----
+All content lives in the root `content/` directory.
 
-## Experience
+### Add a project
 
-### Data Scientist (Administrateur)
-**Court of Justice of the EU - InnovationLab** (10/2024 – current)
-- AI, GenAI, ML, LLM, ...
+1. Open `content/projects.json`.
+2. Add a new object with the fields: `id`, `title`, `summary`, `themes`, `tools`, `year`, `impact`, `stack`.
+3. The portfolio filter uses `themes`, `tools`, and `year` to filter the list.
 
-### (Senior) Statistician / Data Scientist  
-**CDC Cartel Damage Claims Consulting** (1/2019 – 6/2024)  
-- Lead and coordinate all aspects of data collection and analysis, communicating effectively with external parties across Europe.  
-- Develop and maintain coding pipelines, create interactive dashboards, and perform econometric modeling.  
-- Handle data, economics, and legal aspects within court proceedings.  
-- Spearheaded automation and workflow enhancement projects.  
+### Add a publication
 
-**Key Skills**: Project Management, Data Mining, Advanced Analytics, Competition Law, Statistical Modelling, Big Data, Kedro, Airflow, AWS, Azure, R, Python, SQL
+1. Open `content/publications.json`.
+2. Add a new object with: `title`, `source`, `date`, `link`, `type`.
 
-### Research Intern  
-**National Bank of Belgium** (9/2018 – 6/2019)  
-- Conducted research on predicting national growth based on survey data.  
-- Presented findings at the 2019 Central Bank Business Survey (CBBS) conference and the National Bank's Council of Regency.  
+### Update CV
 
-**Key Skills**: R, Data Management, Statistical Modelling, Time Series Analysis
+1. Host the PDF somewhere public (Google Drive, Dropbox) and update the CV page link.
+2. Update experience in `content/experience.json` and education in `content/education.json`.
 
-## Non-Profit
+## Deployment (GitHub Pages)
 
-Treasurer and board member at **Famisol**, an NGO supporting families with disabled children.
+The repository includes a GitHub Actions workflow that builds the Astro site and deploys it to GitHub Pages.
 
----
+1. Ensure Pages is set to **GitHub Actions** in repo settings.
+2. Push to `main`. The workflow runs `npm install` and `npm run build`.
 
-## Education
+## Copy deck
 
-- **LL.M. in Competition Law and Economics**  
-  **Brussels School of Competition** (2020 – 2021)  
-  Thesis: *The economic approach and the need for legal certainty in competition damage claims*  
+### Hero (EN)
+Turning complex legal and economic data into clear, reliable decisions.
 
-- **MSc. in Statistics**  
-  **KU Leuven** (2016 – 2019)  
-  Thesis: *The Variability of the Belgian Business Survey Indicator - analysis and predictive power*  
+I build NLP pipelines, econometric models, and automation systems that help legal and policy teams move faster with confidence.
 
-- **Bachelor in Political Science**  
-  **Université Libre de Bruxelles** (2013 – 2016)  
-  Erasmus: Universidade Católica Portuguesa, Portugal  
+### Hero (FR)
+Transformer des données juridiques et économiques en décisions claires et fiables.
 
----
+Je conçois des pipelines NLP, des modèles économétriques et des automatisations pour aider les équipes juridiques et politiques à avancer avec confiance.
 
-## Languages
+### About (EN)
+I sit at the intersection of data science, economics, and legal context. My work focuses on building trustworthy pipelines—NLP models, econometric analysis, and automation—that make complex evidence easier to act on.
 
-- **French**: Native  
-- **English**: Fluent  
-- **Dutch**: Fluent  
+### About (FR)
+J’opère à l’interface entre data science, économie et contexte juridique. Mon travail porte sur des pipelines fiables — NLP, analyses économétriques et automatisation — pour rendre les preuves complexes plus actionnables.
 
----
-
-## Hobbies
-
-- Climbing  
-- Cycling  
-- Tennis  
-- Chess  
-
----
-
-## Certifications
-
-- **Graduated Statistician (GradStat)**, Royal Statistical Society (6/2020 – Current)
-- **Natural Language Processing Specialization**, DeepLearning.AI (9/2024)
-- **Cybersecurity Certificate**, Google (9/2023)  
-- **Publishing Visualizations in R with Shiny and flexdashboard**, Coursera (11/2022)  
-- **Microsoft Azure Machine Learning for Data Scientists**, Microsoft (10/2022)  
-- **Practical Data Science on the AWS Cloud Specialization**, DeepLearning.AI (10/2022)  
-- **Project Management Certification**, Google (4/2022)
-
----
-
-## Projects Worked On
-
-1. **Document Submission Automation**: Developed a Python and R-based system for court document submission.  
-2. **Data Automation**: Streamlined data collection and cleaning workflows using Kedro, Airflow, and Python.  
-3. **Quantitative Analysis for Damage Quantification**: Led analyses to assess damages, ensuring accuracy and validity.  
-4. **Public Data Processing**: Automated data gathering from Eurostat, ECB, and IMF for economic analysis.  
-5. **Email Communication System**: Built a system for automated, personalized email communication.  
-6. **Interactive Dashboard Design**: Designed dashboards using R (Shiny, Flexdashboard) and Python (Streamlit).  
-7. **Litigation Risk Analysis**: Monitored and analyzed litigation risks.  
-8. **Expert Report Co-authorship**: Co-authored expert reports and published blog posts on legal-economic topics.  
-
-**Featured Blog Posts**:  
-- [Decoding Transaction Data in Private Competition Law Damage Litigations](https://www.lexology.com/library/detail.aspx?g=27c15931-634a-4b85-a808-deea3fbcdbc5)  
-- [Challenges in Quantifying Private Antitrust Damages](https://www.lexology.com/library/detail.aspx?g=f9b77257-81f2-40bc-90a6-98e51e9d117b)  
-- [General Court Dismisses Scania’s Appeal in the Truck Cartel Case](https://www.lexology.com/library/detail.aspx?g=24f37af4-4478-4eba-b158-3410faf19f84)
-
----
-
-### Coding
-
-- **R**: 100%  
-- **Python**: 100%  
-- **SQL**: 100%  
-- **Power BI**: 90%  
-- **Git**: 80%  
-- **SAS**: 80%  
-- **STATA**: 40%
+### Project descriptions
+- Document submission automation — Automated multilingual document intake and validation workflows for court-ready data pipelines.
+- Damages quantification modelling — Econometric models for defensible cartel damages estimation.
+- End-to-end data automation — Automated ingestion, transformation, and reporting across multi-source datasets.
+- Interactive dashboards — Shiny and Streamlit dashboards for analytics stakeholders.

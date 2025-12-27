@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import caseStudies from "../../content/case-studies.json";
+---
+<BaseLayout title="Case Studies" description="Detailed case studies using a problem → approach → impact format.">
+  <section class="section container">
+    <div class="section-title">
+      <h2>Case studies</h2>
+      <span class="badge">Problem → Approach → Impact</span>
+    </div>
+    <div class="grid">
+      {caseStudies.map((study) => (
+        <article class="card">
+          <h3>{study.title}</h3>
+          <p><strong>Problem:</strong> {study.problem}</p>
+          <p><strong>Approach:</strong> {study.approach}</p>
+          <p><strong>Impact:</strong> {study.impact}</p>
+          <p class="muted"><strong>Stack:</strong> {study.stack}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

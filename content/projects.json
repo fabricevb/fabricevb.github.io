@@ -1,0 +1,93 @@
+[
+  {
+    "id": "document-submission-automation",
+    "title": "Document submission automation",
+    "summary": "Automated multilingual document intake and validation workflows for court-ready data pipelines.",
+    "themes": ["NLP", "automation", "legal-tech"],
+    "tools": ["Python", "NLP", "SQL", "Airflow"],
+    "year": 2024,
+    "impact": [
+      "Reduced manual triage and data entry for legal teams.",
+      "Improved traceability and governance across submissions."
+    ],
+    "stack": "Python, spaCy, SQL, Airflow, Git"
+  },
+  {
+    "id": "case-law-text-classification",
+    "title": "Case-law text classification",
+    "summary": "Built classification models to route and prioritize case-law documents for faster review.",
+    "themes": ["NLP", "legal-tech"],
+    "tools": ["Python", "NLP", "ML"],
+    "year": 2023,
+    "impact": [
+      "Increased consistency in document routing decisions.",
+      "Enabled reusable NLP pipelines for new domains."
+    ],
+    "stack": "Python, scikit-learn, spaCy, MLflow"
+  },
+  {
+    "id": "damages-quantification-model",
+    "title": "Damages quantification modelling",
+    "summary": "Designed econometric models for cartel damages estimation in competition cases.",
+    "themes": ["econometrics", "legal-tech"],
+    "tools": ["R", "Python", "STATA"],
+    "year": 2022,
+    "impact": [
+      "Provided defensible estimates for litigation support.",
+      "Streamlined model validation across multiple datasets."
+    ],
+    "stack": "R, Python, STATA"
+  },
+  {
+    "id": "end-to-end-data-automation",
+    "title": "End-to-end data automation",
+    "summary": "Automated ingestion, transformation, and reporting across multi-source datasets.",
+    "themes": ["automation", "dashboards"],
+    "tools": ["Python", "Airflow", "SQL"],
+    "year": 2021,
+    "impact": [
+      "Significantly improved delivery speed for recurring analyses.",
+      "Cut manual QA time with automated checks."
+    ],
+    "stack": "Python, Airflow, SQL, Git"
+  },
+  {
+    "id": "public-data-processing",
+    "title": "Public data processing",
+    "summary": "Built reusable pipelines for Eurostat, ECB, and IMF datasets.",
+    "themes": ["automation", "econometrics"],
+    "tools": ["Python", "R", "SQL"],
+    "year": 2021,
+    "impact": [
+      "Enabled faster scenario analysis for economists.",
+      "Improved data consistency across client reports."
+    ],
+    "stack": "Python, R, SQL"
+  },
+  {
+    "id": "interactive-dashboards",
+    "title": "Interactive dashboards",
+    "summary": "Delivered Shiny and Streamlit dashboards for analytics stakeholders.",
+    "themes": ["dashboards", "automation"],
+    "tools": ["R", "Python", "PowerBI"],
+    "year": 2020,
+    "impact": [
+      "Made complex outputs accessible to non-technical users.",
+      "Standardized KPI reporting across engagements."
+    ],
+    "stack": "R Shiny, Streamlit, PowerBI"
+  },
+  {
+    "id": "litigation-risk-analysis",
+    "title": "Litigation risk analysis",
+    "summary": "Quantified litigation exposure using structured + text data signals.",
+    "themes": ["legal-tech", "NLP"],
+    "tools": ["Python", "SQL", "NLP"],
+    "year": 2020,
+    "impact": [
+      "Supported legal teams with risk scoring insights.",
+      "Enhanced narrative reporting with NLP evidence."
+    ],
+    "stack": "Python, SQL, NLP"
+  }
+]

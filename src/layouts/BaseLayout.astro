@@ -1,0 +1,127 @@
+---
+import "../styles/global.css";
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const metaTitle = title ? `${title} | Fabrice Van Boeckel` : "Fabrice Van Boeckel | Data Scientist";
+const metaDescription =
+  description ||
+  "Data scientist bridging legal, economic, and NLP analytics with automation-ready delivery.";
+const image = `${Astro.site}/og-image.svg`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Fabrice Van Boeckel",
+  jobTitle: "Data Scientist",
+  url: Astro.site,
+  sameAs: ["https://www.linkedin.com"],
+  knowsAbout: ["NLP", "Data Science", "Econometrics", "Legal Tech", "Automation"]
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{metaTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={metaTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={image} />
+    <link rel="icon" href="/favicon.ico" />
+    <script type="application/ld+json">{JSON.stringify(schema)}</script>
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="/" class="button" aria-label="Homepage">FVB</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/about">About</a>
+          <a href="/portfolio">Portfolio</a>
+          <a href="/case-studies">Case studies</a>
+          <a href="/publications">Publications</a>
+          <a href="/cv">CV</a>
+          <a href="/photography">Photography</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+          <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Fabrice Van Boeckel</strong>
+          <p class="muted">Data science, NLP, and automation for legal and economic contexts.</p>
+        </div>
+        <div>
+          <strong>Explore</strong>
+          <ul class="list">
+            <li><a href="/portfolio">Projects</a></li>
+            <li><a href="/case-studies">Case studies</a></li>
+            <li><a href="/publications">Publications</a></li>
+            <li><a href="/photography">Photography</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contact</strong>
+          <ul class="list">
+            <li><a href="mailto:fabrice@example.com">fabrice@example.com</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const root = document.documentElement;
+      const storedTheme = localStorage.getItem("theme");
+      const storedLang = localStorage.getItem("lang") || "en";
+      const themeToggle = document.querySelector("[data-theme-toggle]");
+      const langToggle = document.querySelector("[data-lang-toggle]");
+
+      const applyTheme = (theme) => {
+        if (theme === "dark") {
+          root.setAttribute("data-theme", "dark");
+          themeToggle.textContent = "Light";
+        } else {
+          root.removeAttribute("data-theme");
+          themeToggle.textContent = "Dark";
+        }
+      };
+
+      const applyLang = (lang) => {
+        document.querySelectorAll("[data-lang]").forEach((el) => {
+          el.classList.toggle("is-active", el.dataset.lang === lang);
+        });
+        langToggle.textContent = lang === "en" ? "FR" : "EN";
+      };
+
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
+      applyLang(storedLang);
+
+      themeToggle?.addEventListener("click", () => {
+        const newTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", newTheme);
+        applyTheme(newTheme);
+      });
+
+      langToggle?.addEventListener("click", () => {
+        const newLang = localStorage.getItem("lang") === "en" ? "fr" : "en";
+        localStorage.setItem("lang", newLang);
+        applyLang(newLang);
+      });
+    </script>
+  </body>
+</html>

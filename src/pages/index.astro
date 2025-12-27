@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import projects from "../../content/projects.json";
+import toolbox from "../../content/toolbox.json";
+const featured = projects.slice(0, 3);
+---
+<BaseLayout title="Home">
+  <section class="hero container">
+    <div data-lang="en" class="is-active">
+      <span class="badge">Data science · NLP · Legal-tech</span>
+      <h1>Turning complex legal and economic data into clear, reliable decisions.</h1>
+      <p class="tagline">
+        I build NLP pipelines, econometric models, and automation systems that help legal and policy
+        teams move faster with confidence.
+      </p>
+    </div>
+    <div data-lang="fr">
+      <span class="badge">Data science · NLP · Legal-tech</span>
+      <h1>Transformer des données juridiques et économiques en décisions claires et fiables.</h1>
+      <p class="tagline">
+        Je conçois des pipelines NLP, des modèles économétriques et des automatisations pour aider
+        les équipes juridiques et politiques à avancer avec confiance.
+      </p>
+    </div>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a class="button primary" href="/portfolio">Explore portfolio</a>
+      <a class="button" href="/contact">Start a conversation</a>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <h3>10+ years</h3>
+        <p class="muted">Analytics + econometrics in legal settings.</p>
+      </div>
+      <div class="kpi">
+        <h3>AI to production</h3>
+        <p class="muted">Deployed NLP solutions inside public sector stacks.</p>
+      </div>
+      <div class="kpi">
+        <h3>Multilingual</h3>
+        <p class="muted">FR / EN / NL stakeholder collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured work</h2>
+        <a class="button" href="/portfolio">View all projects</a>
+      </div>
+      <div class="grid grid-3">
+        {featured.map((project) => (
+          <article class="card">
+            <span class="badge">{project.year}</span>
+            <h3>{project.title}</h3>
+            <p class="muted">{project.summary}</p>
+            <div class="tags">
+              {project.themes.map((theme) => (
+                <span class="tag">{theme}</span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Toolbox</h2>
+        <span class="badge">What I use</span>
+      </div>
+      <div class="tags">
+        {toolbox.map((item) => (
+          <span class="tag">{item}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="accordion">
+        <h3>Text summarization explainer</h3>
+        <details>
+          <summary>1. Gather and clean legal documents</summary>
+          <p class="muted">
+            Preprocess multilingual texts, remove boilerplate, and normalize formatting.
+          </p>
+        </details>
+        <details>
+          <summary>2. Extract key entities + topics</summary>
+          <p class="muted">
+            Named-entity recognition helps isolate facts, parties, and legal references.
+          </p>
+        </details>
+        <details>
+          <summary>3. Generate concise summaries</summary>
+          <p class="muted">
+            Combine extractive and abstractive techniques with human-in-the-loop review.
+          </p>
+        </details>
+      </div>
+      <div>
+        <h3>Pipeline narrative</h3>
+        <div class="stepper">
+          <div class="step">Ingestion → structured metadata checks</div>
+          <div class="step">Quality rules → automated flags + routing</div>
+          <div class="step">Model scoring → review queue prioritization</div>
+          <div class="step">Delivery → dashboards + audit logs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
