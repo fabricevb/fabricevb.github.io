@@ -130,6 +130,17 @@ header {
   max-width: 55ch;
 }
 
+.tagline-hero {
+  max-width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tagline-wide {
+  max-width: 100%;
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
