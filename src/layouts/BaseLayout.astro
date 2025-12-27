@@ -2,19 +2,30 @@
 import "../styles/global.css";
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const metaTitle = title ? `${title} | Fabrice Van Boeckel` : "Fabrice Van Boeckel | Data Scientist";
+const metaTitle = title ? `${title} | Fabrice Van Boeckel` : "Fabrice Van Boeckel | Data Scientist — NLP & Legal/Economic Data";
 const metaDescription =
   description ||
-  "Data scientist bridging legal, economic, Artificial Intelligence, and NLP analytics with automation-ready delivery.";
+  "Data Scientist specializing in NLP, legal and economic data, and automation-ready applied AI.";
 const image = `${Astro.site}/og-image.svg`;
 const schema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Fabrice Van Boeckel",
-  jobTitle: "Data Scientist",
-  url: Astro.site,
-  sameAs: ["https://www.linkedin.com/in/fabricevb/"],
-  knowsAbout: ["NLP", "Data Science", "Artificial Intelligence", "Econometrics", "Legal Tech", "Automation"]
+  "@graph": [
+    {
+      "@type": "Person",
+      name: "Fabrice Van Boeckel",
+      jobTitle: "Data Scientist",
+      url: Astro.site,
+      sameAs: ["https://www.linkedin.com/in/fabricevb/"],
+      knowsAbout: ["NLP", "Data Science", "Applied AI", "Econometrics", "Legal Tech", "Automation"]
+    },
+    {
+      "@type": "WebSite",
+      name: "Fabrice Van Boeckel",
+      url: Astro.site,
+      description: metaDescription,
+      inLanguage: ["en", "fr", "nl"]
+    }
+  ]
 };
 ---
 <!DOCTYPE html>
@@ -30,61 +41,58 @@ const schema = {
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Fabrice Van Boeckel" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={metaTitle} />
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={image} />
     <link rel="icon" href="/favicon.ico" />
-    <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header>
       <div class="container navbar">
-        <a href="/" class="button" aria-label="Homepage">Fabrice Van Boeckel</a>
+        <a href="/" class="brand" aria-label="Homepage">Fabrice Van Boeckel</a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="/about">
+          <a href="/#about">
             <span class="lang-inline is-active" data-lang="en">About</span>
             <span class="lang-inline" data-lang="fr">À propos</span>
             <span class="lang-inline" data-lang="nl">Over</span>
           </a>
-          <a href="/portfolio">
-            <span class="lang-inline is-active" data-lang="en">Portfolio</span>
-            <span class="lang-inline" data-lang="fr">Portfolio</span>
-            <span class="lang-inline" data-lang="nl">Portfolio</span>
+          <a href="/#projects">
+            <span class="lang-inline is-active" data-lang="en">Projects</span>
+            <span class="lang-inline" data-lang="fr">Projets</span>
+            <span class="lang-inline" data-lang="nl">Projecten</span>
           </a>
-          <a href="/case-studies">
-            <span class="lang-inline is-active" data-lang="en">Case studies</span>
-            <span class="lang-inline" data-lang="fr">Études de cas</span>
-            <span class="lang-inline" data-lang="nl">Casestudy’s</span>
-          </a>
-          <a href="/publications">
+          <a href="/#publications">
             <span class="lang-inline is-active" data-lang="en">Publications</span>
             <span class="lang-inline" data-lang="fr">Publications</span>
             <span class="lang-inline" data-lang="nl">Publicaties</span>
           </a>
-          <a href="/cv">
-            <span class="lang-inline is-active" data-lang="en">CV</span>
-            <span class="lang-inline" data-lang="fr">CV</span>
-            <span class="lang-inline" data-lang="nl">CV</span>
+          <a href="/#talks">
+            <span class="lang-inline is-active" data-lang="en">Talks</span>
+            <span class="lang-inline" data-lang="fr">Interventions</span>
+            <span class="lang-inline" data-lang="nl">Spreken</span>
           </a>
-          <a href="/photography">
-            <span class="lang-inline is-active" data-lang="en">Photography</span>
-            <span class="lang-inline" data-lang="fr">Photographie</span>
-            <span class="lang-inline" data-lang="nl">Fotografie</span>
-          </a>
-          <a href="/contact">
+          <a href="/#contact">
             <span class="lang-inline is-active" data-lang="en">Contact</span>
             <span class="lang-inline" data-lang="fr">Contact</span>
             <span class="lang-inline" data-lang="nl">Contact</span>
           </a>
         </nav>
         <div class="nav-actions">
-          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
-          <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
+          <a class="button primary nav-cta" href="/#contact">
+            <span class="lang-inline is-active" data-lang="en">Contact</span>
+            <span class="lang-inline" data-lang="fr">Contacter</span>
+            <span class="lang-inline" data-lang="nl">Contact</span>
+          </a>
+          <button class="lang-toggle" type="button" data-lang-toggle aria-label="Toggle language">EN</button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">Dark</button>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <slot />
     </main>
     <footer class="footer">
@@ -168,9 +176,11 @@ const schema = {
         if (theme === "dark") {
           root.setAttribute("data-theme", "dark");
           themeToggle.textContent = getThemeLabel("light");
+          themeToggle.setAttribute("aria-pressed", "true");
         } else {
           root.removeAttribute("data-theme");
           themeToggle.textContent = getThemeLabel("dark");
+          themeToggle.setAttribute("aria-pressed", "false");
         }
       };
 
