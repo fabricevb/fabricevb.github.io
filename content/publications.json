@@ -1,44 +1,62 @@
 [
   {
-    "title": "Challenges in Quantifying Private Antitrust Damages: Addressing Data Availability and Reliability",
+    "title": {
+      "en": "Automating damages analysis with reproducible pipelines",
+      "fr": "Automatiser l’analyse des dommages avec des pipelines reproductibles",
+      "nl": "Schadeanalyse automatiseren met reproduceerbare pipelines"
+    },
+    "source": "CDC Cartel Damage Claims Blog",
+    "date": "Dec 2023",
+    "link": "https://www.carteldamageclaims.com/",
+    "type": {
+      "en": "Blog",
+      "fr": "Blog",
+      "nl": "Blog"
+    }
+  },
+  {
+    "title": {
+      "en": "Competition damages: bringing data teams closer to legal strategy",
+      "fr": "Dommages de concurrence : rapprocher les équipes data de la stratégie juridique",
+      "nl": "Mededingingsschade: datateams dichter bij de juridische strategie brengen"
+    },
     "source": "Lexology",
-    "date": "2023",
-    "link": "https://www.lexology.com/library/search?search=Challenges%20in%20Quantifying%20Private%20Antitrust%20Damages%3A%20Addressing%20Data%20Availability%20and%20Reliability",
-    "type": "Article"
+    "date": "Jun 2023",
+    "link": "https://www.lexology.com/",
+    "type": {
+      "en": "Article",
+      "fr": "Article",
+      "nl": "Artikel"
+    }
   },
   {
-    "title": "Decoding Transaction Data in Private Competition Law Damage Litigations: Efficient data management in legal proceedings",
+    "title": {
+      "en": "Efficient evidence in cartel damages cases",
+      "fr": "Preuves efficaces dans les affaires de dommages liés aux cartels",
+      "nl": "Efficiënt bewijs in kartelschadezaken"
+    },
     "source": "Lexology",
-    "date": "2023",
-    "link": "https://www.lexology.com/library/search?search=Decoding%20Transaction%20Data%20in%20Private%20Competition%20Law%20Damage%20Litigations",
-    "type": "Article"
+    "date": "Feb 2022",
+    "link": "https://www.lexology.com/",
+    "type": {
+      "en": "Article",
+      "fr": "Article",
+      "nl": "Artikel"
+    }
   },
   {
-    "title": "General Court entirely dismisses Scania’s appeal and confirms Scania’s participation in the Truck Cartel",
-    "source": "Lexology",
-    "date": "2022",
-    "link": "https://www.lexology.com/library/search?search=General%20Court%20entirely%20dismisses%20Scania%E2%80%99s%20appeal%20and%20confirms%20Scania%E2%80%99s%20participation%20in%20the%20Truck%20Cartel",
-    "type": "Article"
-  },
-  {
-    "title": "The Economic Approach and the Need for Legal Certainty in Competition Damage Claims",
-    "source": "LL.M. Dissertation",
-    "date": "2021",
-    "link": "#",
-    "type": "Thesis"
-  },
-  {
-    "title": "What can the variability and the volatility of opinions (from the Belgian business survey) reveal?",
-    "source": "Central Bank Business Surveys (CBBS) Conference",
-    "date": "2019",
-    "link": "#",
-    "type": "Conference"
-  },
-  {
-    "title": "The Variability of the Belgian Business Survey Indicator - Analysis and Predictive Power",
+    "title": {
+      "en": "Predictive power of the Belgian Business Survey",
+      "fr": "Pouvoir prédictif de la Belgian Business Survey",
+      "nl": "Voorspellende kracht van de Belgian Business Survey"
+    },
     "source": "Master Thesis, KU Leuven",
-    "date": "2019",
-    "link": "https://github.com/fabricevb/Master-Thesis",
-    "type": "Thesis"
+    "date": "Sep 2019",
+    "link": "#",
+    "type": {
+      "en": "Thesis",
+      "fr": "Mémoire",
+      "nl": "Scriptie"
+    }
   }
 ]

@@ -1,45 +1,62 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout title="Contact" description="Get in touch for collaborations or speaking. ">
+<BaseLayout title="Contact" description="Get in touch for collaborations or speaking.">
   <section class="section container">
     <div class="section-title">
-      <h2>Contact</h2>
-      <span class="badge">Open to collaboration</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Contact</span>
+        <span class="lang-inline" data-lang="fr">Contact</span>
+        <span class="lang-inline" data-lang="nl">Contact</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Open to collaboration</span>
+        <span class="lang-inline" data-lang="fr">Ouvert à la collaboration</span>
+        <span class="lang-inline" data-lang="nl">Open voor samenwerking</span>
+      </span>
     </div>
     <p class="tagline">
-      Use the form below or email me directly. I respond quickly for research, consulting, and
-      speaking opportunities.
+      <span class="lang-inline is-active" data-lang="en">
+        Connect with me on LinkedIn for research, consulting, or speaking opportunities.
+      </span>
+      <span class="lang-inline" data-lang="fr">
+        Contactez-moi sur LinkedIn pour des opportunités de recherche, de conseil ou de conférence.
+      </span>
+      <span class="lang-inline" data-lang="nl">
+        Neem contact op via LinkedIn voor research, consulting of spreekopdrachten.
+      </span>
     </p>
     <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-      <form class="card" action="https://formspree.io/f/your-id" method="POST">
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button class="button primary" type="submit">Send message</button>
-        <p class="muted" style="font-size: 0.85rem;">
-          Update the Formspree ID or use a mailto fallback if preferred.
-        </p>
-      </form>
       <div class="card">
-        <h3>Direct channels</h3>
+        <h3>
+          <span class="lang-inline is-active" data-lang="en">LinkedIn</span>
+          <span class="lang-inline" data-lang="fr">LinkedIn</span>
+          <span class="lang-inline" data-lang="nl">LinkedIn</span>
+        </h3>
         <ul class="list">
-          <li><strong>Email:</strong> fabrice@example.com</li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fabricevb/">linkedin.com/in/fabricevb</a></li>
-          <li><strong>Location:</strong> Luxembourg / Brussels</li>
+          <li><a href="https://www.linkedin.com/in/fabricevb/">linkedin.com/in/fabricevb</a></li>
+          <li>
+            <strong>
+              <span class="lang-inline is-active" data-lang="en">Location:</span>
+              <span class="lang-inline" data-lang="fr">Localisation :</span>
+              <span class="lang-inline" data-lang="nl">Locatie:</span>
+            </strong>
+            Luxembourg / Brussels
+          </li>
         </ul>
         <p class="muted">
-          Interested in data governance, NLP, or legal-tech modernization? Let’s discuss scope and
-          outcomes.
+          <span class="lang-inline is-active" data-lang="en">
+            Interested in Artificial Intelligence, NLP, or legal-tech modernization? Let’s discuss
+            scope and outcomes.
+          </span>
+          <span class="lang-inline" data-lang="fr">
+            Intéressé par l’Artificial Intelligence, le NLP ou la modernisation legal-tech ?
+            Parlons du périmètre et des résultats.
+          </span>
+          <span class="lang-inline" data-lang="nl">
+            Interesse in Artificial Intelligence, NLP of legal-tech-modernisering? Laten we
+            scope en resultaten bespreken.
+          </span>
         </p>
       </div>
     </div>

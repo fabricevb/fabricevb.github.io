@@ -5,7 +5,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const metaTitle = title ? `${title} | Fabrice Van Boeckel` : "Fabrice Van Boeckel | Data Scientist";
 const metaDescription =
   description ||
-  "Data scientist bridging legal, economic, and NLP analytics with automation-ready delivery.";
+  "Data scientist bridging legal, economic, Artificial Intelligence, and NLP analytics with automation-ready delivery.";
 const image = `${Astro.site}/og-image.svg`;
 const schema = {
   "@context": "https://schema.org",
@@ -14,7 +14,7 @@ const schema = {
   jobTitle: "Data Scientist",
   url: Astro.site,
   sameAs: ["https://www.linkedin.com/in/fabricevb/"],
-  knowsAbout: ["NLP", "Data Science", "Econometrics", "Legal Tech", "Automation"]
+  knowsAbout: ["NLP", "Data Science", "Artificial Intelligence", "Econometrics", "Legal Tech", "Automation"]
 };
 ---
 <!DOCTYPE html>
@@ -40,18 +40,46 @@ const schema = {
   <body>
     <header>
       <div class="container navbar">
-        <a href="/" class="button" aria-label="Homepage">FVB</a>
+        <a href="/" class="button" aria-label="Homepage">Fabrice Van Boeckel</a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="/about">About</a>
-          <a href="/portfolio">Portfolio</a>
-          <a href="/case-studies">Case studies</a>
-          <a href="/publications">Publications</a>
-          <a href="/cv">CV</a>
-          <a href="/photography">Photography</a>
-          <a href="/contact">Contact</a>
+          <a href="/about">
+            <span class="lang-inline is-active" data-lang="en">About</span>
+            <span class="lang-inline" data-lang="fr">À propos</span>
+            <span class="lang-inline" data-lang="nl">Over</span>
+          </a>
+          <a href="/portfolio">
+            <span class="lang-inline is-active" data-lang="en">Portfolio</span>
+            <span class="lang-inline" data-lang="fr">Portfolio</span>
+            <span class="lang-inline" data-lang="nl">Portfolio</span>
+          </a>
+          <a href="/case-studies">
+            <span class="lang-inline is-active" data-lang="en">Case studies</span>
+            <span class="lang-inline" data-lang="fr">Études de cas</span>
+            <span class="lang-inline" data-lang="nl">Casestudy’s</span>
+          </a>
+          <a href="/publications">
+            <span class="lang-inline is-active" data-lang="en">Publications</span>
+            <span class="lang-inline" data-lang="fr">Publications</span>
+            <span class="lang-inline" data-lang="nl">Publicaties</span>
+          </a>
+          <a href="/cv">
+            <span class="lang-inline is-active" data-lang="en">CV</span>
+            <span class="lang-inline" data-lang="fr">CV</span>
+            <span class="lang-inline" data-lang="nl">CV</span>
+          </a>
+          <a href="/photography">
+            <span class="lang-inline is-active" data-lang="en">Photography</span>
+            <span class="lang-inline" data-lang="fr">Photographie</span>
+            <span class="lang-inline" data-lang="nl">Fotografie</span>
+          </a>
+          <a href="/contact">
+            <span class="lang-inline is-active" data-lang="en">Contact</span>
+            <span class="lang-inline" data-lang="fr">Contact</span>
+            <span class="lang-inline" data-lang="nl">Contact</span>
+          </a>
         </nav>
         <div class="nav-actions">
-          <button class="lang-toggle" type="button" data-lang-toggle>FR</button>
+          <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
           <button class="theme-toggle" type="button" data-theme-toggle>Dark</button>
         </div>
       </div>
@@ -63,21 +91,56 @@ const schema = {
       <div class="container footer-grid">
         <div>
           <strong>Fabrice Van Boeckel</strong>
-          <p class="muted">Data science, NLP, and automation for legal and economic contexts.</p>
+          <p class="muted">
+            <span class="lang-inline is-active" data-lang="en">Data science, Artificial Intelligence, and automation for legal and economic contexts.</span>
+            <span class="lang-inline" data-lang="fr">Data science, Artificial Intelligence et automatisation pour les contextes juridiques et économiques.</span>
+            <span class="lang-inline" data-lang="nl">Data science, Artificial Intelligence en automatisering voor juridische en economische contexten.</span>
+          </p>
         </div>
         <div>
-          <strong>Explore</strong>
+          <strong>
+            <span class="lang-inline is-active" data-lang="en">Explore</span>
+            <span class="lang-inline" data-lang="fr">Explorer</span>
+            <span class="lang-inline" data-lang="nl">Verkennen</span>
+          </strong>
           <ul class="list">
-            <li><a href="/portfolio">Projects</a></li>
-            <li><a href="/case-studies">Case studies</a></li>
-            <li><a href="/publications">Publications</a></li>
-            <li><a href="/photography">Photography</a></li>
+            <li>
+              <a href="/portfolio">
+                <span class="lang-inline is-active" data-lang="en">Projects</span>
+                <span class="lang-inline" data-lang="fr">Projets</span>
+                <span class="lang-inline" data-lang="nl">Projecten</span>
+              </a>
+            </li>
+            <li>
+              <a href="/case-studies">
+                <span class="lang-inline is-active" data-lang="en">Case studies</span>
+                <span class="lang-inline" data-lang="fr">Études de cas</span>
+                <span class="lang-inline" data-lang="nl">Casestudy’s</span>
+              </a>
+            </li>
+            <li>
+              <a href="/publications">
+                <span class="lang-inline is-active" data-lang="en">Publications</span>
+                <span class="lang-inline" data-lang="fr">Publications</span>
+                <span class="lang-inline" data-lang="nl">Publicaties</span>
+              </a>
+            </li>
+            <li>
+              <a href="/photography">
+                <span class="lang-inline is-active" data-lang="en">Photography</span>
+                <span class="lang-inline" data-lang="fr">Photographie</span>
+                <span class="lang-inline" data-lang="nl">Fotografie</span>
+              </a>
+            </li>
           </ul>
         </div>
         <div>
-          <strong>Contact</strong>
+          <strong>
+            <span class="lang-inline is-active" data-lang="en">Contact</span>
+            <span class="lang-inline" data-lang="fr">Contact</span>
+            <span class="lang-inline" data-lang="nl">Contact</span>
+          </strong>
           <ul class="list">
-            <li><a href="mailto:fabrice@example.com">fabrice@example.com</a></li>
             <li><a href="https://www.linkedin.com/in/fabricevb/">LinkedIn</a></li>
           </ul>
         </div>
@@ -86,17 +149,28 @@ const schema = {
     <script>
       const root = document.documentElement;
       const storedTheme = localStorage.getItem("theme");
-      const storedLang = localStorage.getItem("lang") || "en";
+      const supportedLangs = ["en", "fr", "nl"];
+      const storedLang = supportedLangs.includes(localStorage.getItem("lang"))
+        ? localStorage.getItem("lang")
+        : "en";
       const themeToggle = document.querySelector("[data-theme-toggle]");
       const langToggle = document.querySelector("[data-lang-toggle]");
+      const themeLabels = {
+        light: { en: "Light", fr: "Clair", nl: "Licht" },
+        dark: { en: "Dark", fr: "Sombre", nl: "Donker" }
+      };
+      const getThemeLabel = (theme) => {
+        const currentLang = localStorage.getItem("lang") || "en";
+        return themeLabels[theme]?.[currentLang] ?? themeLabels[theme].en;
+      };
 
       const applyTheme = (theme) => {
         if (theme === "dark") {
           root.setAttribute("data-theme", "dark");
-          themeToggle.textContent = "Light";
+          themeToggle.textContent = getThemeLabel("light");
         } else {
           root.removeAttribute("data-theme");
-          themeToggle.textContent = "Dark";
+          themeToggle.textContent = getThemeLabel("dark");
         }
       };
 
@@ -104,7 +178,9 @@ const schema = {
         document.querySelectorAll("[data-lang]").forEach((el) => {
           el.classList.toggle("is-active", el.dataset.lang === lang);
         });
-        langToggle.textContent = lang === "en" ? "FR" : "EN";
+        document.documentElement.lang = lang;
+        langToggle.textContent = lang.toUpperCase();
+        applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
       };
 
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -118,7 +194,9 @@ const schema = {
       });
 
       langToggle?.addEventListener("click", () => {
-        const newLang = localStorage.getItem("lang") === "en" ? "fr" : "en";
+        const currentLang = localStorage.getItem("lang") || "en";
+        const newLang =
+          currentLang === "en" ? "fr" : currentLang === "fr" ? "nl" : "en";
         localStorage.setItem("lang", newLang);
         applyLang(newLang);
       });
