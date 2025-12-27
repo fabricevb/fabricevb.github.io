@@ -1,26 +1,74 @@
 [
   {
     "id": "automated-document-intake",
-    "title": "Automated document intake for court workflows",
-    "problem": "Court teams needed to process growing volumes of multilingual submissions with limited time for manual checks.",
-    "approach": "Designed an NLP-driven intake pipeline with automated validation, metadata enrichment, and routing rules.",
-    "impact": "Shortened review cycles and improved traceability in the governance process without compromising quality.",
+    "title": {
+      "en": "Automated document intake for court workflows",
+      "fr": "Automatisation de l’ingestion documentaire pour les flux judiciaires",
+      "nl": "Geautomatiseerde documentinname voor gerechtelijke workflows"
+    },
+    "problem": {
+      "en": "Court teams needed to process growing volumes of multilingual submissions with limited time for manual checks.",
+      "fr": "Les équipes judiciaires devaient traiter un volume croissant de dépôts multilingues avec peu de temps pour les vérifications manuelles.",
+      "nl": "Rechtbankteams moesten een groeiend volume aan meertalige inzendingen verwerken met beperkte tijd voor handmatige controles."
+    },
+    "approach": {
+      "en": "Designed an NLP-driven intake pipeline with automated validation, metadata enrichment, and routing rules.",
+      "fr": "Conception d’un pipeline d’ingestion piloté par le NLP avec validation automatique, enrichissement des métadonnées et règles de routage.",
+      "nl": "Ontwerp van een NLP-gestuurde intakepijplijn met automatische validatie, metadata-verrijking en routeringsregels."
+    },
+    "impact": {
+      "en": "Shortened review cycles and improved traceability in the governance process without compromising quality.",
+      "fr": "Réduction des cycles de revue et amélioration de la traçabilité dans la gouvernance sans compromis sur la qualité.",
+      "nl": "Kortere reviewcycli en betere traceerbaarheid in het governanceproces zonder kwaliteitsverlies."
+    },
     "stack": "Python, spaCy, SQL, Airflow, Git"
   },
   {
     "id": "damages-modelling",
-    "title": "Damages quantification for competition cases",
-    "problem": "Legal teams required defensible damages estimates across multiple client datasets.",
-    "approach": "Built econometric models with transparent assumptions, automated data prep, and reusable reporting templates.",
-    "impact": "Delivered consistent, audit-ready outputs that supported expert reports and decision-making.",
+    "title": {
+      "en": "Damages quantification for competition cases",
+      "fr": "Quantification des dommages dans les affaires de concurrence",
+      "nl": "Schadebegroting voor mededingingszaken"
+    },
+    "problem": {
+      "en": "Legal teams required defensible damages estimates across multiple client datasets.",
+      "fr": "Les équipes juridiques avaient besoin d’estimations défendables sur plusieurs jeux de données clients.",
+      "nl": "Juridische teams hadden verdedigbare schattingen nodig over meerdere klantdatasets."
+    },
+    "approach": {
+      "en": "Built econometric models with transparent assumptions, automated data prep, and reusable reporting templates.",
+      "fr": "Construction de modèles économétriques avec hypothèses transparentes, préparation automatisée des données et modèles de reporting réutilisables.",
+      "nl": "Econometrische modellen gebouwd met transparante aannames, geautomatiseerde datapreparatie en herbruikbare rapportagesjablonen."
+    },
+    "impact": {
+      "en": "Delivered consistent, audit-ready outputs that supported expert reports and decision-making.",
+      "fr": "Livraison de résultats cohérents et prêts pour l’audit, utiles aux rapports d’expertise et à la prise de décision.",
+      "nl": "Consistente, auditklare output geleverd die expertenrapporten en besluitvorming ondersteunt."
+    },
     "stack": "R, Python, STATA, SQL"
   },
   {
     "id": "automation-dashboards",
-    "title": "Automation + dashboards for recurring analytics",
-    "problem": "Analysts were spending significant time refreshing datasets and rebuilding visuals.",
-    "approach": "Orchestrated data pipelines in Airflow and surfaced metrics through Shiny/Streamlit dashboards.",
-    "impact": "Improved turnaround times and made insights accessible to non-technical stakeholders.",
+    "title": {
+      "en": "Automation + dashboards for recurring analytics",
+      "fr": "Automatisation et tableaux de bord pour les analyses récurrentes",
+      "nl": "Automatisering en dashboards voor terugkerende analytics"
+    },
+    "problem": {
+      "en": "Analysts were spending significant time refreshing datasets and rebuilding visuals.",
+      "fr": "Les analystes passaient beaucoup de temps à actualiser les jeux de données et à refaire les visuels.",
+      "nl": "Analisten besteedden veel tijd aan het vernieuwen van datasets en het heropbouwen van visuals."
+    },
+    "approach": {
+      "en": "Orchestrated data pipelines in Airflow and surfaced metrics through Shiny/Streamlit dashboards.",
+      "fr": "Orchestration de pipelines de données dans Airflow et mise à disposition d’indicateurs via des dashboards Shiny/Streamlit.",
+      "nl": "Datapijplijnen georkestreerd in Airflow en metrics ontsloten via Shiny/Streamlit-dashboards."
+    },
+    "impact": {
+      "en": "Improved turnaround times and made insights accessible to non-technical stakeholders.",
+      "fr": "Délais de production réduits et insights rendus accessibles aux parties prenantes non techniques.",
+      "nl": "Doorlooptijden verbeterd en inzichten toegankelijk gemaakt voor niet-technische stakeholders."
+    },
     "stack": "Python, Airflow, R Shiny, Streamlit"
   }
 ]

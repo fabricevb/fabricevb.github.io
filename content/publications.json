@@ -1,30 +1,62 @@
 [
   {
-    "title": "Automating damages analysis with reproducible pipelines",
+    "title": {
+      "en": "Automating damages analysis with reproducible pipelines",
+      "fr": "Automatiser l’analyse des dommages avec des pipelines reproductibles",
+      "nl": "Schadeanalyse automatiseren met reproduceerbare pipelines"
+    },
     "source": "CDC Cartel Damage Claims Blog",
     "date": "Dec 2023",
     "link": "https://www.carteldamageclaims.com/",
-    "type": "Blog"
+    "type": {
+      "en": "Blog",
+      "fr": "Blog",
+      "nl": "Blog"
+    }
   },
   {
-    "title": "Competition damages: bringing data teams closer to legal strategy",
+    "title": {
+      "en": "Competition damages: bringing data teams closer to legal strategy",
+      "fr": "Dommages de concurrence : rapprocher les équipes data de la stratégie juridique",
+      "nl": "Mededingingsschade: datateams dichter bij de juridische strategie brengen"
+    },
     "source": "Lexology",
     "date": "Jun 2023",
     "link": "https://www.lexology.com/",
-    "type": "Article"
+    "type": {
+      "en": "Article",
+      "fr": "Article",
+      "nl": "Artikel"
+    }
   },
   {
-    "title": "Efficient evidence in cartel damages cases",
+    "title": {
+      "en": "Efficient evidence in cartel damages cases",
+      "fr": "Preuves efficaces dans les affaires de dommages liés aux cartels",
+      "nl": "Efficiënt bewijs in kartelschadezaken"
+    },
     "source": "Lexology",
     "date": "Feb 2022",
     "link": "https://www.lexology.com/",
-    "type": "Article"
+    "type": {
+      "en": "Article",
+      "fr": "Article",
+      "nl": "Artikel"
+    }
   },
   {
-    "title": "Predictive power of the Belgian Business Survey",
+    "title": {
+      "en": "Predictive power of the Belgian Business Survey",
+      "fr": "Pouvoir prédictif de la Belgian Business Survey",
+      "nl": "Voorspellende kracht van de Belgian Business Survey"
+    },
     "source": "Master Thesis, KU Leuven",
     "date": "Sep 2019",
     "link": "#",
-    "type": "Thesis"
+    "type": {
+      "en": "Thesis",
+      "fr": "Mémoire",
+      "nl": "Scriptie"
+    }
   }
 ]

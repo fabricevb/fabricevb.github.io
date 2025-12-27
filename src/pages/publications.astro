@@ -5,19 +5,45 @@ import publications from "../../content/publications.json";
 <BaseLayout title="Publications" description="Articles, blog posts, and academic work.">
   <section class="section container">
     <div class="section-title">
-      <h2>Publications</h2>
-      <span class="badge">Searchable list</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Publications</span>
+        <span class="lang-inline" data-lang="fr">Publications</span>
+        <span class="lang-inline" data-lang="nl">Publicaties</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Searchable list</span>
+        <span class="lang-inline" data-lang="fr">Liste consultable</span>
+        <span class="lang-inline" data-lang="nl">Doorzoekbare lijst</span>
+      </span>
     </div>
-    <div class="filter-bar">
+    <div class="filter-bar is-active" data-lang="en">
       <input type="search" placeholder="Search publications" aria-label="Search publications" data-pub-search />
+    </div>
+    <div class="filter-bar" data-lang="fr">
+      <input type="search" placeholder="Rechercher une publication" aria-label="Rechercher une publication" data-pub-search />
+    </div>
+    <div class="filter-bar" data-lang="nl">
+      <input type="search" placeholder="Zoek publicaties" aria-label="Zoek publicaties" data-pub-search />
     </div>
     <div class="grid" data-pub-results>
       {publications.map((publication) => (
-        <article class="card" data-publication data-title={publication.title}>
-          <span class="badge">{publication.type}</span>
-          <h3>{publication.title}</h3>
+        <article class="card" data-publication data-title={`${publication.title.en} ${publication.title.fr} ${publication.title.nl}`}>
+          <span class="badge">
+            <span class="lang-inline is-active" data-lang="en">{publication.type.en}</span>
+            <span class="lang-inline" data-lang="fr">{publication.type.fr}</span>
+            <span class="lang-inline" data-lang="nl">{publication.type.nl}</span>
+          </span>
+          <h3>
+            <span class="lang-inline is-active" data-lang="en">{publication.title.en}</span>
+            <span class="lang-inline" data-lang="fr">{publication.title.fr}</span>
+            <span class="lang-inline" data-lang="nl">{publication.title.nl}</span>
+          </h3>
           <p class="muted">{publication.source} · {publication.date}</p>
-          <a class="button" href={publication.link} target="_blank" rel="noreferrer">Read</a>
+          <a class="button" href={publication.link} target="_blank" rel="noreferrer">
+            <span class="lang-inline is-active" data-lang="en">Read</span>
+            <span class="lang-inline" data-lang="fr">Lire</span>
+            <span class="lang-inline" data-lang="nl">Lees</span>
+          </a>
         </article>
       ))}
     </div>
@@ -25,14 +51,21 @@ import publications from "../../content/publications.json";
 
   <script is:inline>
     const pubCards = Array.from(document.querySelectorAll("[data-publication]"));
-    const pubSearch = document.querySelector("[data-pub-search]");
+    const getActiveSearch = () =>
+      document.querySelector("[data-lang].is-active [data-pub-search]") ||
+      document.querySelector("[data-pub-search]");
 
-    pubSearch?.addEventListener("input", () => {
-      const query = pubSearch.value.toLowerCase();
+    const applyFilter = () => {
+      const search = getActiveSearch();
+      const query = search?.value.toLowerCase() ?? "";
       pubCards.forEach((card) => {
         const title = card.dataset.title.toLowerCase();
         card.style.display = title.includes(query) ? "block" : "none";
       });
+    };
+
+    document.querySelectorAll("[data-pub-search]").forEach((input) => {
+      input.addEventListener("input", applyFilter);
     });
   </script>
 </BaseLayout>

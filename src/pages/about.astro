@@ -7,14 +7,22 @@ import Timeline from "../components/Timeline.astro";
 <BaseLayout title="About" description="Narrative, values, and experience timeline.">
   <section class="section container">
     <div class="section-title">
-      <h2>About</h2>
-      <span class="badge">Narrative + values</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">About</span>
+        <span class="lang-inline" data-lang="fr">À propos</span>
+        <span class="lang-inline" data-lang="nl">Over</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Narrative + values</span>
+        <span class="lang-inline" data-lang="fr">Narratif + valeurs</span>
+        <span class="lang-inline" data-lang="nl">Verhaal + waarden</span>
+      </span>
     </div>
     <div data-lang="en" class="is-active">
       <p class="tagline">
         I sit at the intersection of data science, economics, and legal context. My work focuses on
-        building trustworthy pipelines—NLP models, econometric analysis, and automation—that make
-        complex evidence easier to act on.
+        building trustworthy pipelines—Artificial Intelligence, NLP models, econometric analysis,
+        and automation—that make complex evidence easier to act on.
       </p>
       <ul class="list">
         <li>Bias-aware, transparent modelling for legal and policy stakeholders.</li>
@@ -25,8 +33,8 @@ import Timeline from "../components/Timeline.astro";
     <div data-lang="fr">
       <p class="tagline">
         J’opère à l’interface entre data science, économie et contexte juridique. Mon travail porte
-        sur des pipelines fiables — NLP, analyses économétriques et automatisation — pour rendre les
-        preuves complexes plus actionnables.
+        sur des pipelines fiables — Artificial Intelligence, NLP, analyses économétriques et
+        automatisation — pour rendre les preuves complexes plus actionnables.
       </p>
       <ul class="list">
         <li>Modèles transparents et maîtrisés pour les parties prenantes juridiques.</li>
@@ -34,20 +42,48 @@ import Timeline from "../components/Timeline.astro";
         <li>Documentation claire et résultats reproductibles.</li>
       </ul>
     </div>
+    <div data-lang="nl">
+      <p class="tagline">
+        Ik werk op het kruispunt van data science, economie en juridische context. Mijn focus ligt
+        op betrouwbare pijplijnen — Artificial Intelligence, NLP-modellen, econometrische analyses
+        en automatisering — om complexe bewijsvoering bruikbaar te maken.
+      </p>
+      <ul class="list">
+        <li>Biasbewuste, transparante modellering voor juridische en beleidsstakeholders.</li>
+        <li>Automatisering met menselijke kwaliteitscontrole.</li>
+        <li>Duidelijke documentatie en reproduceerbare resultaten.</li>
+      </ul>
+    </div>
   </section>
 
   <section class="section container">
     <div class="section-title">
-      <h2>Experience</h2>
-      <span class="badge">Timeline</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Experience</span>
+        <span class="lang-inline" data-lang="fr">Expérience</span>
+        <span class="lang-inline" data-lang="nl">Ervaring</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Timeline</span>
+        <span class="lang-inline" data-lang="fr">Chronologie</span>
+        <span class="lang-inline" data-lang="nl">Tijdlijn</span>
+      </span>
     </div>
     <Timeline items={experience} />
   </section>
 
   <section class="section container">
     <div class="section-title">
-      <h2>Education</h2>
-      <span class="badge">Academic path</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Education</span>
+        <span class="lang-inline" data-lang="fr">Formation</span>
+        <span class="lang-inline" data-lang="nl">Opleiding</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Academic path</span>
+        <span class="lang-inline" data-lang="fr">Parcours académique</span>
+        <span class="lang-inline" data-lang="nl">Academisch traject</span>
+      </span>
     </div>
     <Timeline items={education} />
   </section>

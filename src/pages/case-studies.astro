@@ -5,17 +5,63 @@ import caseStudies from "../../content/case-studies.json";
 <BaseLayout title="Case Studies" description="Detailed case studies using a problem → approach → impact format.">
   <section class="section container">
     <div class="section-title">
-      <h2>Case studies</h2>
-      <span class="badge">Problem → Approach → Impact</span>
+      <h2>
+        <span class="lang-inline is-active" data-lang="en">Case studies</span>
+        <span class="lang-inline" data-lang="fr">Études de cas</span>
+        <span class="lang-inline" data-lang="nl">Casestudy’s</span>
+      </h2>
+      <span class="badge">
+        <span class="lang-inline is-active" data-lang="en">Problem → Approach → Impact</span>
+        <span class="lang-inline" data-lang="fr">Problème → Approche → Impact</span>
+        <span class="lang-inline" data-lang="nl">Probleem → Aanpak → Impact</span>
+      </span>
     </div>
     <div class="grid">
       {caseStudies.map((study) => (
         <article class="card">
-          <h3>{study.title}</h3>
-          <p><strong>Problem:</strong> {study.problem}</p>
-          <p><strong>Approach:</strong> {study.approach}</p>
-          <p><strong>Impact:</strong> {study.impact}</p>
-          <p class="muted"><strong>Stack:</strong> {study.stack}</p>
+          <h3>
+            <span class="lang-inline is-active" data-lang="en">{study.title.en}</span>
+            <span class="lang-inline" data-lang="fr">{study.title.fr}</span>
+            <span class="lang-inline" data-lang="nl">{study.title.nl}</span>
+          </h3>
+          <p>
+            <strong>
+              <span class="lang-inline is-active" data-lang="en">Problem:</span>
+              <span class="lang-inline" data-lang="fr">Problème :</span>
+              <span class="lang-inline" data-lang="nl">Probleem:</span>
+            </strong>
+            <span class="lang-inline is-active" data-lang="en"> {study.problem.en}</span>
+            <span class="lang-inline" data-lang="fr"> {study.problem.fr}</span>
+            <span class="lang-inline" data-lang="nl"> {study.problem.nl}</span>
+          </p>
+          <p>
+            <strong>
+              <span class="lang-inline is-active" data-lang="en">Approach:</span>
+              <span class="lang-inline" data-lang="fr">Approche :</span>
+              <span class="lang-inline" data-lang="nl">Aanpak:</span>
+            </strong>
+            <span class="lang-inline is-active" data-lang="en"> {study.approach.en}</span>
+            <span class="lang-inline" data-lang="fr"> {study.approach.fr}</span>
+            <span class="lang-inline" data-lang="nl"> {study.approach.nl}</span>
+          </p>
+          <p>
+            <strong>
+              <span class="lang-inline is-active" data-lang="en">Impact:</span>
+              <span class="lang-inline" data-lang="fr">Impact :</span>
+              <span class="lang-inline" data-lang="nl">Impact:</span>
+            </strong>
+            <span class="lang-inline is-active" data-lang="en"> {study.impact.en}</span>
+            <span class="lang-inline" data-lang="fr"> {study.impact.fr}</span>
+            <span class="lang-inline" data-lang="nl"> {study.impact.nl}</span>
+          </p>
+          <p class="muted">
+            <strong>
+              <span class="lang-inline is-active" data-lang="en">Stack:</span>
+              <span class="lang-inline" data-lang="fr">Stack :</span>
+              <span class="lang-inline" data-lang="nl">Stack:</span>
+            </strong>
+            {study.stack}
+          </p>
         </article>
       ))}
     </div>
