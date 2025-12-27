@@ -15,3 +15,11 @@ social_links:
 # Optional: Markdown settings
 markdown: kramdown
 highlighter: rouge
+
+# Ignore Astro source and dependencies when building with Jekyll.
+exclude:
+  - node_modules
+  - src
+  - package.json
+  - package-lock.json
+  - astro.config.mjs
