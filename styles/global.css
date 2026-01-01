@@ -334,6 +334,32 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.gallery-section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gallery-full {
+  display: grid;
+  gap: 2.5rem;
+  padding: 0 clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.gallery-full .card {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  gap: 0.85rem;
+}
+
+.gallery-full img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 .card {
   background: var(--bg-secondary);
   padding: 1.5rem;
