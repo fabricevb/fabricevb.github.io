@@ -38,7 +38,6 @@ const themeLabels = {
         <option value="R">R</option>
         <option value="SQL">SQL</option>
         <option value="Airflow">Airflow</option>
-        <option value="Cloud">Cloud</option>
       </select>
       <select data-year>
         <option value="all">All years</option>
@@ -65,7 +64,6 @@ const themeLabels = {
         <option value="R">R</option>
         <option value="SQL">SQL</option>
         <option value="Airflow">Airflow</option>
-        <option value="Cloud">Cloud</option>
       </select>
       <select data-year>
         <option value="all">Toutes les années</option>
@@ -92,7 +90,6 @@ const themeLabels = {
         <option value="R">R</option>
         <option value="SQL">SQL</option>
         <option value="Airflow">Airflow</option>
-        <option value="Cloud">Cloud</option>
       </select>
       <select data-year>
         <option value="all">Alle jaren</option>
@@ -144,16 +141,13 @@ const themeLabels = {
   const getActiveControl = (selector) =>
     document.querySelector(`[data-lang].is-active ${selector}`) ||
     document.querySelector(selector);
-
+  const getActiveValue = (selector, fallback = "all") =>
+    getActiveControl(selector)?.value ?? fallback;
   const applyFilters = () => {
-    const search = getActiveControl("[data-search]");
-    const theme = getActiveControl("[data-theme]");
-    const tool = getActiveControl("[data-tool]");
-    const year = getActiveControl("[data-year]");
-    const query = search?.value.toLowerCase() ?? "";
-    const themeValue = theme?.value ?? "all";
-    const toolValue = tool?.value ?? "all";
-    const yearValue = year?.value ?? "all";
+    const query = getActiveControl("[data-search]")?.value.toLowerCase() ?? "";
+    const themeValue = getActiveValue("[data-theme]");
+    const toolValue = getActiveValue("[data-tool]");
+    const yearValue = getActiveValue("[data-year]");
 
     cards.forEach((card) => {
       const title = card.dataset.title.toLowerCase();
@@ -161,10 +155,7 @@ const themeLabels = {
       const tools = card.dataset.tools.split(",");
       const matchesSearch = title.includes(query);
       const matchesTheme = themeValue === "all" || themes.includes(themeValue);
-      const matchesTool =
-        toolValue === "all" ||
-        tools.includes(toolValue) ||
-        (toolValue === "Cloud" && tools.some((t) => t.includes("AWS") || t.includes("Azure")));
+      const matchesTool = toolValue === "all" || tools.includes(toolValue);
       const matchesYear = yearValue === "all" || card.dataset.year === yearValue;
 
       card.style.display = matchesSearch && matchesTheme && matchesTool && matchesYear ? "block" : "none";
