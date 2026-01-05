@@ -58,5 +58,20 @@
       "fr": "Mémoire",
       "nl": "Scriptie"
     }
+  },
+  {
+    "title": {
+      "en": "What can the variability and volatility of opinions (from the Belgian business survey) reveal?",
+      "fr": "Que révèlent la variabilité et la volatilité des opinions (enquête des entreprises belges) ?",
+      "nl": "Wat onthullen variabiliteit en volatiliteit van meningen (Belgische bedrijfsenquête)?"
+    },
+    "source": "Central Bank Business Surveys (CBBS) Conference",
+    "date": "2019",
+    "link": "#",
+    "type": {
+      "en": "Conference",
+      "fr": "Conférence",
+      "nl": "Conferentie"
+    }
   }
 ]
