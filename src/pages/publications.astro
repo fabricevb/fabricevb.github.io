@@ -39,11 +39,13 @@ import publications from "../../content/publications.json";
             <span class="lang-inline" data-lang="nl">{publication.title.nl}</span>
           </h3>
           <p class="muted">{publication.source} · {publication.date}</p>
-          <a class="button" href={publication.link} target="_blank" rel="noreferrer">
-            <span class="lang-inline is-active" data-lang="en">Read</span>
-            <span class="lang-inline" data-lang="fr">Lire</span>
-            <span class="lang-inline" data-lang="nl">Lees</span>
-          </a>
+          {publication.link && publication.link !== "#" && (
+            <a class="button" href={publication.link} target="_blank" rel="noreferrer">
+              <span class="lang-inline is-active" data-lang="en">Read</span>
+              <span class="lang-inline" data-lang="fr">Lire</span>
+              <span class="lang-inline" data-lang="nl">Lees</span>
+            </a>
+          )}
         </article>
       ))}
     </div>
