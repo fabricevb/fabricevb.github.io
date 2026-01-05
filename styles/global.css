@@ -432,9 +432,17 @@ header {
   display: none;
 }
 
+[data-lang]:not(.lang-inline) {
+  display: none;
+}
+
 .lang-inline.is-active,
 [data-lang].is-active {
   display: inline;
+}
+
+[data-lang].is-active:not(.lang-inline) {
+  display: block;
 }
 
 .lang-toggle,
