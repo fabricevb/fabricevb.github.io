@@ -312,11 +312,13 @@ const publicationHighlights = publications.slice(0, 4);
               <span class="lang-inline" data-lang="nl">{publication.title.nl}</span>
             </h3>
             <p class="muted">{publication.source} · {publication.date}</p>
-            <a class="button" href={publication.link} target="_blank" rel="noreferrer">
-              <span class="lang-inline is-active" data-lang="en">Read</span>
-              <span class="lang-inline" data-lang="fr">Lire</span>
-              <span class="lang-inline" data-lang="nl">Lees</span>
-            </a>
+            {publication.link && publication.link !== "#" && (
+              <a class="button" href={publication.link} target="_blank" rel="noreferrer">
+                <span class="lang-inline is-active" data-lang="en">Read</span>
+                <span class="lang-inline" data-lang="fr">Lire</span>
+                <span class="lang-inline" data-lang="nl">Lees</span>
+              </a>
+            )}
           </article>
         ))}
       </div>
@@ -397,49 +399,6 @@ const publicationHighlights = publications.slice(0, 4);
             <span class="tag">{item}</span>
           ))}
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="talks">
-    <div class="container">
-      <div class="section-title">
-        <h2>
-          <span class="lang-inline is-active" data-lang="en">Talks & Workshops</span>
-          <span class="lang-inline" data-lang="fr">Interventions & ateliers</span>
-          <span class="lang-inline" data-lang="nl">Lezingen & workshops</span>
-        </h2>
-        <span class="badge">
-          <span class="lang-inline is-active" data-lang="en">Selected appearances</span>
-          <span class="lang-inline" data-lang="fr">Interventions sélectionnées</span>
-          <span class="lang-inline" data-lang="nl">Geselecteerde sessies</span>
-        </span>
-      </div>
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>
-            <span class="lang-inline is-active" data-lang="en">Applied AI for legal decision support</span>
-            <span class="lang-inline" data-lang="fr">IA appliquée pour la décision juridique</span>
-            <span class="lang-inline" data-lang="nl">Toegepaste AI voor juridische besluitvorming</span>
-          </h3>
-          <p class="muted">
-            <span class="lang-inline is-active" data-lang="en">Guest lecture · Public sector analytics program.</span>
-            <span class="lang-inline" data-lang="fr">Intervention invitée · Programme analytics secteur public.</span>
-            <span class="lang-inline" data-lang="nl">Gastcollege · analytics programma publieke sector.</span>
-          </p>
-        </article>
-        <article class="card">
-          <h3>
-            <span class="lang-inline is-active" data-lang="en">NLP governance and model auditability</span>
-            <span class="lang-inline" data-lang="fr">Gouvernance NLP et auditabilité des modèles</span>
-            <span class="lang-inline" data-lang="nl">NLP-governance en modelevaluatie</span>
-          </h3>
-          <p class="muted">
-            <span class="lang-inline is-active" data-lang="en">Workshop · LegalTech roundtable.</span>
-            <span class="lang-inline" data-lang="fr">Atelier · Table ronde LegalTech.</span>
-            <span class="lang-inline" data-lang="nl">Workshop · LegalTech rondetafel.</span>
-          </p>
-        </article>
       </div>
     </div>
   </section>

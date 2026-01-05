@@ -46,21 +46,6 @@
   },
   {
     "title": {
-      "en": "What can the variability and volatility of opinions (from the Belgian business survey) reveal?",
-      "fr": "Que révèlent la variabilité et la volatilité des opinions (enquête des entreprises belges) ?",
-      "nl": "Wat onthullen variabiliteit en volatiliteit van meningen (Belgische bedrijfsenquête)?"
-    },
-    "source": "Central Bank Business Surveys (CBBS) Conference",
-    "date": "2019",
-    "link": "#",
-    "type": {
-      "en": "Conference",
-      "fr": "Conférence",
-      "nl": "Conferentie"
-    }
-  },
-  {
-    "title": {
       "en": "The Variability of the Belgian Business Survey Indicator - Analysis and Predictive Power",
       "fr": "La variabilité du Belgian Business Survey Indicator - analyse et pouvoir prédictif",
       "nl": "De variabiliteit van de Belgian Business Survey Indicator - analyse en voorspellend vermogen"
@@ -72,6 +57,21 @@
       "en": "Thesis",
       "fr": "Mémoire",
       "nl": "Scriptie"
+    }
+  },
+  {
+    "title": {
+      "en": "What can the variability and volatility of opinions (from the Belgian business survey) reveal?",
+      "fr": "Que révèlent la variabilité et la volatilité des opinions (enquête des entreprises belges) ?",
+      "nl": "Wat onthullen variabiliteit en volatiliteit van meningen (Belgische bedrijfsenquête)?"
+    },
+    "source": "Central Bank Business Surveys (CBBS) Conference",
+    "date": "2019",
+    "link": "#",
+    "type": {
+      "en": "Conference",
+      "fr": "Conférence",
+      "nl": "Conferentie"
     }
   }
 ]
