@@ -23,7 +23,7 @@ export type Publication = {
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/fabricevb/";
 export const EMAIL_ADDRESS = "fabricevb@hotmail.com";
-export const CV_URL = "/assets/cv/Fabrice-Van-Boeckel-CV.pdf";
+export const CV_URL = "/cv/CV_FabriceVanBoeckel_LegalTech.pdf";
 
 export const CONTACT_LABELS: Record<
   Locale,
@@ -47,7 +47,6 @@ export const HERO: Record<
     title: string;
     titleAccent: string;
     lead: string;
-    now: string;
     primary: string;
     secondary: string;
   }
@@ -58,7 +57,6 @@ export const HERO: Record<
     titleAccent: "decisions you can defend.",
     lead:
       "I build NLP pipelines, econometric models, and automation systems for legal and economic evidence — with traceability, governance, and human review built in from day one. Recent work spans experiment design, production monitoring, and shipping AI features end-to-end alongside product and engineering teams — not just back-end pipelines.",
-    now: "\n",
     primary: "See selected work",
     secondary: "About me",
   },
@@ -68,7 +66,6 @@ export const HERO: Record<
     titleAccent: "décisions défendables.",
     lead:
       "Je conçois des pipelines NLP, des modèles économétriques et des systèmes d'automatisation pour la preuve juridique et économique — traçabilité, gouvernance et supervision humaine intégrées dès le départ. Mes travaux récents couvrent la conception d'expérimentations, le suivi en production et la mise en service de fonctionnalités IA de bout en bout aux côtés des équipes produit et ingénierie — pas seulement des pipelines back-end.",
-    now: "Actuellement : je termine mon rôle à la CJUE en [CONFIRMER LE MOIS — actuellement septembre 2026], et je regarde vers la suite — des postes seniors en data science / gouvernance de l'IA dans des entreprises de LegalTech.",
     primary: "Voir les travaux",
     secondary: "À propos",
   },
@@ -78,7 +75,6 @@ export const HERO: Record<
     titleAccent: "verdedigbare beslissingen.",
     lead:
       "Ik bouw NLP-pijplijnen, econometrische modellen en automatiseringssystemen voor juridisch en economisch bewijs — met traceerbaarheid, governance en menselijke review vanaf dag één. Recent werk omvat het opzetten van experimenten, monitoring in productie en het end-to-end uitrollen van AI-functionaliteiten samen met product- en engineeringteams — niet alleen back-end pipelines.",
-    now: "Nu: ik rond in [BEVESTIG MAAND — momenteel september 2026] mijn rol bij het HvJ-EU af, en kijk uit naar wat volgt — senior functies in data science / AI-governance bij legal-AI-bedrijven.",
     primary: "Bekijk geselecteerd werk",
     secondary: "Over mij",
   },
@@ -90,19 +86,19 @@ export const METRICS: Record<
 > = {
   en: [
     { value: "6+", label: "Years applied", note: "Legal & economic data science." },
-    { value: "12", label: "Production systems", note: "Shipped, monitored, handed over." },
+    { value: "13", label: "Production systems", note: "Shipped, monitored, handed over." },
     { value: "3", label: "Languages", note: "EN · FR · NL — native working." },
     { value: "100%", label: "Audit-ready", note: "Every pipeline, every model." },
   ],
   fr: [
     { value: "6+", label: "Années d'expérience", note: "Data science juridique et économique." },
-    { value: "12", label: "Systèmes en production", note: "Livrés, supervisés, transférés." },
+    { value: "13", label: "Systèmes en production", note: "Livrés, supervisés, transférés." },
     { value: "3", label: "Langues", note: "EN · FR · NL — niveau natif." },
     { value: "100%", label: "Auditables", note: "Chaque pipeline, chaque modèle." },
   ],
   nl: [
     { value: "6+", label: "Jaar ervaring", note: "Juridische en economische data science." },
-    { value: "12", label: "Productiesystemen", note: "Geleverd, bewaakt, overgedragen." },
+    { value: "13", label: "Productiesystemen", note: "Geleverd, bewaakt, overgedragen." },
     { value: "3", label: "Talen", note: "EN · FR · NL — werkend niveau." },
     { value: "100%", label: "Audit-ready", note: "Elke pijplijn, elk model." },
   ],
@@ -185,6 +181,23 @@ export const PROJECTS: Project[] = [
       nl: "Retrieval-augmented generation-systeem dat een LLM nauwkeurige, herleidbare toegang geeft tot de volledige rechtspraak van het Hof: documentparsing, semantisch chunking en een retrieval-pipeline die decennia aan rechtspraak omzet in een schone, doorzoekbare dataset, met NLP-functies (classificatie, named entity recognition, samenvatting) en een chatinterface als onderzoeksassistent daarbovenop.",
     },
     stack: ["Python", "LLMs & RAG", "Hugging Face", "FastAPI"],
+  },
+  {
+    slug: "ai-governance-framework",
+    year: "2024–2026",
+    tags: ["AI Governance", "Policy", "LegalTech"],
+    image: "/project-dag.jpg",
+    title: {
+      en: "AI risk-assessment & human-in-the-loop governance framework",
+      fr: "Cadre d'évaluation des risques IA et de supervision humaine",
+      nl: "AI-risicobeoordelings- en human-in-the-loop-governancekader",
+    },
+    summary: {
+      en: "Designed the risk-assessment methodology, human-in-the-loop review protocols, and evaluation KPIs governing every production AI system at a major EU judicial institution — the policy layer that decides what the institution's AI can be trusted to do, and how its outputs stay accountable to judges rather than just to engineers. Negotiated directly with legal, business, and IT stakeholders; recommended against deploying a technology when the institutional risk didn't justify it.",
+      fr: "Conception de la méthodologie d'évaluation des risques, des protocoles de supervision humaine (human-in-the-loop) et des indicateurs de performance encadrant tous les systèmes d'IA en production d'une grande institution judiciaire de l'UE — la couche politique qui détermine ce que l'IA de l'institution peut faire en toute confiance, et comment ses résultats restent redevables devant des juges, pas seulement devant des ingénieurs. Négociation directe avec les parties prenantes juridiques, métier et informatiques ; recommandation de ne pas déployer une technologie lorsque le risque institutionnel ne le justifiait pas.",
+      nl: "Ontwerp van de risicobeoordelingsmethodologie, human-in-the-loop-controleprotocollen en performance-KPI's die elk productie-AI-systeem van een grote EU-gerechtelijke instelling beheersen — de beleidslaag die bepaalt wat de AI van de instelling met vertrouwen mag doen, en hoe de resultaten ervan verantwoordbaar blijven tegenover rechters, niet alleen tegenover engineers. Rechtstreekse onderhandeling met juridische, business- en IT-stakeholders; advies om een technologie niet uit te rollen wanneer het institutionele risico dit niet rechtvaardigde.",
+    },
+    stack: ["Risk Assessment", "Human-in-the-Loop Review", "Evaluation KPIs", "Stakeholder Governance"],
   },
   {
     slug: "document-submission",
