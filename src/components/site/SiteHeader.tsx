@@ -44,14 +44,6 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           >
             {nav.about}
           </Link>
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="link-underline text-ink-muted hover:text-ink"
-          >
-            LinkedIn ↗
-          </a>
         </nav>
 
         <div className="flex items-center gap-1 font-mono text-xs">

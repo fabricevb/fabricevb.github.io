@@ -85,19 +85,19 @@ export const METRICS: Record<
   Array<{ value: string; label: string; note: string }>
 > = {
   en: [
-    { value: "6+", label: "Years applied", note: "Legal & economic data science." },
+    { value: "7+", label: "Years applied", note: "Legal & economic data science." },
     { value: "13", label: "Production systems", note: "Shipped, monitored, handed over." },
     { value: "3", label: "Languages", note: "EN · FR · NL — native working." },
     { value: "100%", label: "Audit-ready", note: "Every pipeline, every model." },
   ],
   fr: [
-    { value: "6+", label: "Années d'expérience", note: "Data science juridique et économique." },
+    { value: "7+", label: "Années d'expérience", note: "Data science juridique et économique." },
     { value: "13", label: "Systèmes en production", note: "Livrés, supervisés, transférés." },
     { value: "3", label: "Langues", note: "EN · FR · NL — niveau natif." },
     { value: "100%", label: "Auditables", note: "Chaque pipeline, chaque modèle." },
   ],
   nl: [
-    { value: "6+", label: "Jaar ervaring", note: "Juridische en economische data science." },
+    { value: "7+", label: "Jaar ervaring", note: "Juridische en economische data science." },
     { value: "13", label: "Productiesystemen", note: "Geleverd, bewaakt, overgedragen." },
     { value: "3", label: "Talen", note: "EN · FR · NL — werkend niveau." },
     { value: "100%", label: "Audit-ready", note: "Elke pijplijn, elk model." },
