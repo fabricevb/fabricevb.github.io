@@ -25,7 +25,17 @@ export default function HomePage() {
         ? "Data Scientist · NLP & juridisch bewijs"
         : "Data Scientist · NLP & legal evidence"
   }`;
-  useDocumentMeta({ title, description: h.lead });
+  const descriptions: Record<Locale, string> = {
+    en: "Fabrice Van Boeckel — data scientist working on NLP, AI governance, and econometrics for legal and regulatory evidence. Currently at the Court of Justice of the EU.",
+    fr: "Fabrice Van Boeckel — data scientist spécialisé en NLP, gouvernance de l'IA et économétrie pour la preuve juridique et réglementaire. Actuellement à la Cour de justice de l'Union européenne.",
+    nl: "Fabrice Van Boeckel — data scientist gespecialiseerd in NLP, AI-governance en econometrie voor juridisch en regelgevend bewijs. Momenteel bij het Hof van Justitie van de EU.",
+  };
+  useDocumentMeta({
+    title,
+    description: descriptions[locale],
+    route: `/#/${locale}`,
+    image: "https://fabricevanboeckel.com/og-share.jpg",
+  });
 
   return (
     <>
@@ -43,6 +53,9 @@ export default function HomePage() {
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-muted text-pretty">
               {h.lead}
+            </p>
+            <p className="mt-6 max-w-xl border-l border-accent pl-4 font-mono text-xs leading-relaxed text-ink-muted">
+              {h.now}
             </p>
 
             <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">

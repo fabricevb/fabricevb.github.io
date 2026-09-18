@@ -7,9 +7,9 @@ export type Project = {
   image: string;
   title: Record<Locale, string>;
   summary: Record<Locale, string>;
-  problem: Record<Locale, string>;
-  approach: Record<Locale, string>;
-  impact: Record<Locale, string[]>;
+  problem?: Record<Locale, string>;
+  approach?: Record<Locale, string>;
+  impact?: Record<Locale, string[]>;
   stack: string[];
 };
 
@@ -22,6 +22,17 @@ export type Publication = {
 };
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/fabricevb/";
+export const EMAIL_ADDRESS = "fabricevb@hotmail.com";
+export const CV_URL = "/assets/cv/Fabrice-Van-Boeckel-CV.pdf";
+
+export const CONTACT_LABELS: Record<
+  Locale,
+  { email: string; cv: string; linkedin: string }
+> = {
+  en: { email: "Email", cv: "Download CV", linkedin: "LinkedIn" },
+  fr: { email: "E-mail", cv: "Télécharger le CV", linkedin: "LinkedIn" },
+  nl: { email: "E-mail", cv: "CV downloaden", linkedin: "LinkedIn" },
+};
 
 export const NAV: Record<Locale, { work: string; about: string; writing: string }> = {
   en: { work: "Work", about: "About", writing: "Writing" },
@@ -36,6 +47,7 @@ export const HERO: Record<
     title: string;
     titleAccent: string;
     lead: string;
+    now: string;
     primary: string;
     secondary: string;
   }
@@ -45,7 +57,8 @@ export const HERO: Record<
     title: "Turning dense legal evidence into",
     titleAccent: "decisions you can defend.",
     lead:
-      "I build NLP pipelines, econometric models, and automation systems for legal and economic evidence — with traceability, governance, and human review built in from day one.",
+      "I build NLP pipelines, econometric models, and automation systems for legal and economic evidence — with traceability, governance, and human review built in from day one. Recent work spans experiment design, production monitoring, and shipping AI features end-to-end alongside product and engineering teams — not just back-end pipelines.",
+    now: "\n",
     primary: "See selected work",
     secondary: "About me",
   },
@@ -54,7 +67,8 @@ export const HERO: Record<
     title: "Transformer la preuve juridique en",
     titleAccent: "décisions défendables.",
     lead:
-      "Je conçois des pipelines NLP, des modèles économétriques et des systèmes d'automatisation pour la preuve juridique et économique — traçabilité, gouvernance et supervision humaine intégrées dès le départ.",
+      "Je conçois des pipelines NLP, des modèles économétriques et des systèmes d'automatisation pour la preuve juridique et économique — traçabilité, gouvernance et supervision humaine intégrées dès le départ. Mes travaux récents couvrent la conception d'expérimentations, le suivi en production et la mise en service de fonctionnalités IA de bout en bout aux côtés des équipes produit et ingénierie — pas seulement des pipelines back-end.",
+    now: "Actuellement : je termine mon rôle à la CJUE en [CONFIRMER LE MOIS — actuellement septembre 2026], et je regarde vers la suite — des postes seniors en data science / gouvernance de l'IA dans des entreprises de LegalTech.",
     primary: "Voir les travaux",
     secondary: "À propos",
   },
@@ -63,7 +77,8 @@ export const HERO: Record<
     title: "Complex juridisch bewijs omzetten in",
     titleAccent: "verdedigbare beslissingen.",
     lead:
-      "Ik bouw NLP-pijplijnen, econometrische modellen en automatiseringssystemen voor juridisch en economisch bewijs — met traceerbaarheid, governance en menselijke review vanaf dag één.",
+      "Ik bouw NLP-pijplijnen, econometrische modellen en automatiseringssystemen voor juridisch en economisch bewijs — met traceerbaarheid, governance en menselijke review vanaf dag één. Recent werk omvat het opzetten van experimenten, monitoring in productie en het end-to-end uitrollen van AI-functionaliteiten samen met product- en engineeringteams — niet alleen back-end pipelines.",
+    now: "Nu: ik rond in [BEVESTIG MAAND — momenteel september 2026] mijn rol bij het HvJ-EU af, en kijk uit naar wat volgt — senior functies in data science / AI-governance bij legal-AI-bedrijven.",
     primary: "Bekijk geselecteerd werk",
     secondary: "Over mij",
   },
@@ -154,6 +169,23 @@ export const SERVICES: Record<
 };
 
 export const PROJECTS: Project[] = [
+  {
+    slug: "case-law-research-assistant",
+    year: "2024–2026",
+    tags: ["NLP", "RAG", "LLM", "LegalTech"],
+    image: "/project-graph.jpg",
+    title: {
+      en: "Case-law research assistant (RAG)",
+      fr: "Assistant de recherche jurisprudentielle (RAG)",
+      nl: "Onderzoeksassistent rechtspraak (RAG)",
+    },
+    summary: {
+      en: "Retrieval-augmented generation system giving an LLM precise, sourced access to the Court's full jurisprudence: document parsing, semantic chunking, and a retrieval pipeline turning decades of case law into a clean, queryable dataset, with NLP features (classification, named entity recognition, summarisation) and a research-assistant chat interface shipped on top.",
+      fr: "Système de génération augmentée par récupération (RAG) donnant à un LLM un accès précis et sourcé à l'ensemble de la jurisprudence de la Cour : extraction documentaire, découpage sémantique et pipeline de récupération transformant des décennies de jurisprudence en un jeu de données propre et interrogeable, avec des fonctionnalités NLP (classification, reconnaissance d'entités nommées, synthèse) et une interface de chat assistant de recherche déployées par-dessus.",
+      nl: "Retrieval-augmented generation-systeem dat een LLM nauwkeurige, herleidbare toegang geeft tot de volledige rechtspraak van het Hof: documentparsing, semantisch chunking en een retrieval-pipeline die decennia aan rechtspraak omzet in een schone, doorzoekbare dataset, met NLP-functies (classificatie, named entity recognition, samenvatting) en een chatinterface als onderzoeksassistent daarbovenop.",
+    },
+    stack: ["Python", "LLMs & RAG", "Hugging Face", "FastAPI"],
+  },
   {
     slug: "document-submission",
     year: "2024",
@@ -390,9 +422,11 @@ export const ABOUT: Record<
     eyebrow: "About",
     heading: "Data science at the intersection of law, economics, and engineering.",
     paragraphs: [
-      "I'm Fabrice Van Boeckel — a data scientist working with law firms, regulators, and economic consultancies across Belgium, France, and the Netherlands.",
+      "I'm Fabrice Van Boeckel — a data scientist working at the intersection of law, economics, and engineering.",
+      "Since 2024 I've built and run the AI and data strategy for the Court of Justice of the European Union: NLP and retrieval systems over case law spanning 27 national legal systems and 24 languages, and the risk-assessment and human-in-the-loop frameworks that keep those systems accountable to judges, not just to engineers.",
+      "Before that, I spent five years on the data science and econometrics side of competition-law litigation, working with law firms, regulators, and economic consultancies across Belgium, France, and the Netherlands — building the models and dashboards used directly in court.",
       "I work where the stakes demand it: matters where outputs end up in front of a tribunal, a regulator, or a board. That means traceability, governance, and human review are not afterthoughts — they're the design.",
-      "Before consulting, I trained in economics and competition law, which is why my models read like arguments: every assumption is named, every step is reproducible, and every decision is something you can defend out loud.",
+      "Before any of that, I trained in economics and competition law, which is why my models read like arguments: every assumption is named, every step is reproducible, and every decision is something you can defend out loud.",
     ],
     principlesHeading: "How I work",
     principles: [
@@ -415,9 +449,11 @@ export const ABOUT: Record<
     eyebrow: "À propos",
     heading: "Data science à l'interface du droit, de l'économie et de l'ingénierie.",
     paragraphs: [
-      "Je suis Fabrice Van Boeckel — data scientist auprès de cabinets d'avocats, régulateurs et cabinets d'économie en Belgique, France et Pays-Bas.",
-      "J'interviens là où les enjeux le justifient : des dossiers dont les résultats finissent devant un tribunal, un régulateur ou un conseil d'administration. Traçabilité, gouvernance et supervision humaine ne sont pas accessoires — ce sont la conception.",
-      "Avant le conseil, j'ai été formé à l'économie et au droit de la concurrence ; mes modèles se lisent comme des arguments : chaque hypothèse est nommée, chaque étape reproductible, chaque décision défendable.",
+      "Je m'appelle Fabrice Van Boeckel, data scientist au croisement du droit, de l'économie et de l'ingénierie.",
+      "Depuis 2024, je conçois et pilote la stratégie IA et données de la Cour de justice de l'Union européenne : systèmes de NLP et de recherche documentaire appliqués à la jurisprudence de 27 systèmes juridiques nationaux et 24 langues, ainsi que les cadres d'évaluation des risques et de supervision humaine qui rendent ces systèmes redevables devant un juge, pas seulement devant un ingénieur.",
+      "Auparavant, j'ai passé cinq ans du côté data science et économétrie du contentieux concurrence, en travaillant avec des cabinets d'avocats, des régulateurs et des cabinets de conseil économique en Belgique, en France et aux Pays-Bas — à construire les modèles et tableaux de bord utilisés directement devant les tribunaux.",
+      "Je travaille là où l'enjeu l'exige : des dossiers dont les résultats finissent devant un tribunal, un régulateur ou un conseil d'administration. Cela signifie que la traçabilité, la gouvernance et la relecture humaine ne sont pas des réflexions après coup — elles font partie de la conception dès le départ.",
+      "Avant tout cela, j'ai été formé en économie et en droit de la concurrence, ce qui explique pourquoi mes modèles se lisent comme des arguments : chaque hypothèse est nommée, chaque étape reproductible, chaque décision défendable à voix haute.",
     ],
     principlesHeading: "Méthode",
     principles: [
@@ -440,9 +476,11 @@ export const ABOUT: Record<
     eyebrow: "Over",
     heading: "Data science op het kruispunt van recht, economie en engineering.",
     paragraphs: [
-      "Ik ben Fabrice Van Boeckel — data scientist voor advocatenkantoren, toezichthouders en economisch adviesbureaus in België, Frankrijk en Nederland.",
-      "Ik werk waar de belangen het vragen: zaken waarvan de output voor een rechtbank, een toezichthouder of een bestuur belandt. Traceerbaarheid, governance en menselijke review zijn geen bijzaak — ze zijn het ontwerp.",
-      "Vóór consultancy studeerde ik economie en mededingingsrecht. Mijn modellen lezen als argumenten: elke aanname benoemd, elke stap reproduceerbaar, elke beslissing hardop verdedigbaar.",
+      "Ik ben Fabrice Van Boeckel, data scientist op het snijvlak van recht, economie en engineering.",
+      "Sinds 2024 bouw en beheer ik de AI- en datastrategie van het Hof van Justitie van de Europese Unie: NLP- en retrieval-systemen voor rechtspraak uit 27 nationale rechtsstelsels en 24 talen, en de risicobeoordelings- en human-in-the-loop-kaders die deze systemen verantwoordbaar houden tegenover rechters, niet alleen tegenover engineers.",
+      "Daarvoor werkte ik vijf jaar aan de data science- en econometriekant van mededingingsrechtelijke geschillen, met advocatenkantoren, toezichthouders en economische adviesbureaus in België, Frankrijk en Nederland — waar ik de modellen en dashboards bouwde die rechtstreeks in de rechtszaal werden gebruikt.",
+      "Ik werk waar de inzet het vereist: zaken waarvan de uitkomst voor een rechtbank, toezichthouder of raad van bestuur komt. Dat betekent dat traceerbaarheid, governance en menselijke controle geen bijzaak zijn — ze zitten vanaf het ontwerp ingebakken.",
+      "Daarvóór volgde ik een opleiding in economie en mededingingsrecht, en daarom lezen mijn modellen als argumenten: elke aanname is benoemd, elke stap reproduceerbaar, elke beslissing hardop te verdedigen.",
     ],
     principlesHeading: "Werkwijze",
     principles: [
@@ -478,7 +516,7 @@ export const SECTION_HEADINGS: Record<
   en: {
     proof: "Proof",
     work: "Selected work",
-    workLead: "Four representative engagements. Names redacted on request — full references available under NDA.",
+    workLead: "Five representative engagements. Names redacted on request — full references available under NDA.",
     services: "What I do",
     servicesLead: "Four practice areas, often combined within a single engagement.",
     writing: "Writing",
@@ -494,7 +532,7 @@ export const SECTION_HEADINGS: Record<
   fr: {
     proof: "Preuves",
     work: "Travaux sélectionnés",
-    workLead: "Quatre missions représentatives. Noms anonymisés sur demande — références complètes sous NDA.",
+    workLead: "Cinq missions représentatives. Noms anonymisés sur demande — références complètes sous NDA.",
     services: "Ce que je fais",
     servicesLead: "Quatre domaines, souvent combinés dans une même mission.",
     writing: "Écrits",
@@ -510,7 +548,7 @@ export const SECTION_HEADINGS: Record<
   nl: {
     proof: "Bewijs",
     work: "Geselecteerd werk",
-    workLead: "Vier representatieve opdrachten. Namen op verzoek geanonimiseerd — volledige referenties onder NDA.",
+    workLead: "Vijf representatieve opdrachten. Namen op verzoek geanonimiseerd — volledige referenties onder NDA.",
     services: "Wat ik doe",
     servicesLead: "Vier praktijkgebieden, vaak gecombineerd binnen één opdracht.",
     writing: "Publicaties",

@@ -17,7 +17,12 @@ export default function WorkPage() {
     fr: "Études de cas NLP, économétrie et automatisation pour la preuve juridique et économique.",
     nl: "Casestudies in NLP, econometrie en automatisering voor juridisch en economisch bewijs.",
   };
-  useDocumentMeta({ title: titles[locale], description: descs[locale] });
+  useDocumentMeta({
+    title: titles[locale],
+    description: descs[locale],
+    route: `/#/${locale}/work`,
+    image: "https://fabricevanboeckel.com/og-share.jpg",
+  });
 
   return (
     <section className="container-editorial pt-16 md:pt-24">
@@ -63,16 +68,16 @@ export default function WorkPage() {
               </h2>
               <p className="mt-4 text-base text-ink-muted">{p.summary[locale]}</p>
 
-              <dl className="mt-8 space-y-6 border-l border-rule pl-6">
-                <div>
+               <dl className="mt-8 space-y-6 border-l border-rule pl-6">
+                 {p.problem && <div>
                   <dt className="eyebrow">{s.problem}</dt>
                   <dd className="mt-2 text-sm leading-relaxed text-ink">{p.problem[locale]}</dd>
-                </div>
-                <div>
+                 </div>}
+                 {p.approach && <div>
                   <dt className="eyebrow">{s.approach}</dt>
                   <dd className="mt-2 text-sm leading-relaxed text-ink">{p.approach[locale]}</dd>
-                </div>
-                <div>
+                 </div>}
+                 {p.impact && <div>
                   <dt className="eyebrow">{s.impact}</dt>
                   <dd className="mt-2 space-y-1 text-sm leading-relaxed text-ink">
                     <ul className="list-disc space-y-1 pl-4">
@@ -81,7 +86,7 @@ export default function WorkPage() {
                       ))}
                     </ul>
                   </dd>
-                </div>
+                 </div>}
                 <div>
                   <dt className="eyebrow">{s.stack}</dt>
                   <dd className="mt-2 flex flex-wrap gap-2">

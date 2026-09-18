@@ -2,7 +2,9 @@ import { useEffect } from "react";
 
 type Meta = {
   title: string;
-  description?: string;
+  description: string;
+  route: string;
+  image?: string;
 };
 
 function setMeta(name: string, content: string, attr: "name" | "property" = "name") {
@@ -15,15 +17,31 @@ function setMeta(name: string, content: string, attr: "name" | "property" = "nam
   el.setAttribute("content", content);
 }
 
-export function useDocumentMeta({ title, description }: Meta) {
+function setLink(rel: string, href: string) {
+  let el = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`);
+  if (!el) {
+    el = document.createElement("link");
+    el.rel = rel;
+    document.head.appendChild(el);
+  }
+  el.href = href;
+}
+
+export function useDocumentMeta({ title, description, route, image }: Meta) {
   useEffect(() => {
-    if (title) document.title = title;
-    if (description) {
-      setMeta("description", description);
-      setMeta("og:description", description, "property");
+    document.title = title;
+    setMeta("description", description);
+    setMeta("og:title", title, "property");
+    setMeta("og:description", description, "property");
+    setMeta("og:type", "website", "property");
+    setMeta("og:url", route, "property");
+    setMeta("twitter:card", "summary_large_image");
+    setMeta("twitter:title", title);
+    setMeta("twitter:description", description);
+    setLink("canonical", route);
+    if (image) {
+      setMeta("og:image", image, "property");
+      setMeta("twitter:image", image);
     }
-    if (title) {
-      setMeta("og:title", title, "property");
-    }
-  }, [title, description]);
+  }, [title, description, route, image]);
 }

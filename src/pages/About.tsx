@@ -12,7 +12,42 @@ export default function AboutPage() {
     fr: "À propos — Fabrice Van Boeckel",
     nl: "Over — Fabrice Van Boeckel",
   };
-  useDocumentMeta({ title: titles[locale], description: a.paragraphs[0] });
+  const descriptions: Record<Locale, string> = {
+    en: "About Fabrice Van Boeckel — data scientist working on NLP, AI governance, and econometrics for legal and regulatory evidence at the Court of Justice of the EU.",
+    fr: "À propos de Fabrice Van Boeckel — data scientist spécialisé en NLP, gouvernance de l'IA et économétrie pour la preuve juridique et réglementaire à la Cour de justice de l'Union européenne.",
+    nl: "Over Fabrice Van Boeckel — data scientist gespecialiseerd in NLP, AI-governance en econometrie voor juridisch en regelgevend bewijs bij het Hof van Justitie van de EU.",
+  };
+  useDocumentMeta({
+    title: titles[locale],
+    description: descriptions[locale],
+    route: `/#/${locale}/about`,
+    image: "https://fabricevanboeckel.com/og-share.jpg",
+  });
+
+  const testimonialLabels: Record<
+    Locale,
+    { heading: string; quote: string; name: string; role: string }
+  > = {
+    en: {
+      heading: "Testimonials",
+      quote: "[Testimonial pending — ask Fabrice]",
+      name: "[Name pending]",
+      role: "[Role pending]",
+    },
+    fr: {
+      heading: "Témoignages",
+      quote: "[Témoignage en attente — demander à Fabrice]",
+      name: "[Nom en attente]",
+      role: "[Fonction en attente]",
+    },
+    nl: {
+      heading: "Getuigenissen",
+      quote: "[Getuigenis in afwachting — vraag Fabrice]",
+      name: "[Naam in afwachting]",
+      role: "[Functie in afwachting]",
+    },
+  };
+  const testimonial = testimonialLabels[locale];
 
   return (
     <section className="container-editorial pt-16 md:pt-24">
@@ -77,6 +112,20 @@ export default function AboutPage() {
                 </div>
               ))}
             </dl>
+          </div>
+
+          <div className="mt-16">
+            <p className="eyebrow">§ {testimonial.heading}</p>
+            <blockquote className="mt-6 border-y border-rule py-6">
+              <p className="font-display text-xl font-light italic text-ink-muted">
+                “{testimonial.quote}”
+              </p>
+              <footer className="mt-5 font-mono text-xs uppercase text-ink-soft">
+                <span className="text-ink">{testimonial.name}</span>
+                <span className="mx-2">·</span>
+                {testimonial.role}
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>
